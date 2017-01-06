@@ -1,19 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
-
-	/*
-	 * IDEA: have a variable for speed to move at. It
-	 * creates smoother movement of the player
-	 */
-	private Vector3 movementVector;
+public class PlayerController : MonoBehaviour 
+{
+	public GameObject missile;
 	private float speed = 15.0f;
-	/*
-	 * Use these at later date for stopping ship when it hits
-	 * the left most and right most part of the screen
-	 */
 	private float xMin, xMax; 
+	public float projectileSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -24,9 +17,6 @@ public class PlayerController : MonoBehaviour {
 
 		xMin = leftBound.x + 0.6f; //finetuned variable
 		xMax = rightBound.x - 0.6f;
-
-		Debug.Log("Minimum x value: " + xMin);
-		Debug.Log("Maximum x value: " + xMax);
 	}
 	
 	// Update is called once per frame
@@ -46,12 +36,28 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.position += Vector3.right * speed * Time.deltaTime;
 		}
-		else if(Input.GetKeyDown(KeyCode.Space))
+
+		if(Input.GetKeyDown(KeyCode.Space))
 		{
-			Debug.Log("FIRE");
+			InvokeRepeating("shoot", 0.00001f, 0.2f);
+		}
+		/*
+		 * There was a problem here, originally use else if but only 
+		 * one projectile was fired at a time. 
+		 */
+		if(Input.GetKeyUp(KeyCode.Space))
+		{
+			CancelInvoke("shoot");
 		}
 
 		float gamespace = Mathf.Clamp(transform.position.x, xMin, xMax);
 		transform.position = new Vector3(gamespace, transform.position.y, transform.position.z);
+	}
+
+	void shoot()
+	{
+		Vector3 offset = new Vector3(0, 1, 0);
+		GameObject beam = Instantiate(missile, transform.position + offset, Quaternion.identity) as GameObject;
+		beam.GetComponent<Rigidbody2D>().velocity = new Vector3(0, projectileSpeed, 0);
 	}
 }
