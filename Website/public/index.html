@@ -6,20 +6,59 @@
 		<script src="app.js"></script>
 	</head>
 
-	<body class="body_background" ng-app="app">
-		<br><br><br><br><br>
-		<div align="center" class="login_div" ng-controller="appCtrl">
-			<br><br><br>
-			<h1>Final Year Project</h1>
-			<input type="text" placeholder="Username" ng-model="user.name">
-			<br><br><br>
-			<input type="password" placeholder="Password" ng-model="user.password">
-			<br><br><br>
-			Username = {{name}} <br>Password = {{password}}
-			<br><br><br>
-			<button type="button" ng-click="buttonClicked(user.name, user.password)">Login!</button>
-			<br><br><br>
-			<p><a href="new_account.html">Don't have an account? Click here to create one</a></p>
+	<body ng-app="app">
+
+	<!--Show: <input type="checkbox" ng-model="myVar">
+	<div ng-show="myVar"> this can be used to validate credentials-->
+		<div align="center" class="container" ng-controller="appController" ng-hide="createAccount">
+			<table>
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>High Score</th>
+						<th>Time Played</th>
+						<th>&nbsp;</th>
+					</tr>>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td input-class="form-control" ng-model="user.name"></td>
+						<td input-class="form-control" ng-model="user.highscore"></td>
+						<td input-class="form-control" ng-model="user.timeplayed"></td>
+					</tr>
+
+					<tr ng-repeat="u in user">
+						<td>{{u.name}}</td>
+						<td>{{u.highscore}}</td>
+						<td>{{u.timeplayed}}</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
+	<!--</div>-->
+		<p align="center">Don't have an account? Click here to create one <input type="checkbox" ng-model="createAccount"></p>
+		<button ng-click="createAccount=true">Create account</button>
+		<button ng-click="createAccount=false">Login</button>
+	<!-- THIS SHOULD ONLY APPEAR WHEN CHECKBOX IS CHECKED, CURRENTLY ONLY SHOWING ALWAYS
+		<div ng-hide="createAccount=true">
+			<div align="center" class="login_div" ng-controller="appCtrl">
+				<br><br><br>
+				<h1>Final Year Project</h1>
+				<input type="text" placeholder="Email" ng-model="user.email">
+				<br>
+				<span ng-show="$error.user.email">Email address is invalid</span>
+				<br><br><br>
+				<input type="password" placeholder="Username" ng-model="user.name">
+				<br><br><br>
+				<input type="password" placeholder="Password" ng-model="user.password">
+				<br><br><br>
+				Username = {{user.name}}<br>Password={{user.password}}<br>Email={{user.email}}
+				<br><br><br>
+				<button type="button" ng-click="buttonClicked(user.name, user.password)">Login!</button>
+				<br><br><br>
+			</div>
+		</div>
+		-->
 	</body>
 </html>
