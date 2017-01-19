@@ -37,23 +37,16 @@ public class Login : MonoBehaviour {
 
 	public void login()
 	{
-		/*bool UN = false;
-		bool PW = false;
+		//czech this out: answers.unity3d.com/questions/935800/
 
-		//if(u_name != "")
-		{
-			if(System.IO.File.Exists(@"G:\Workarea\FYP\Modern_SI\" + u_name + ".txt"))
-			{
-				Debug.Log("You are logged in "  + u_name + " :)");
-			}
-		}*/
+		Debug.Log(u_name);
+		Debug.Log(p_word);
 
-		//quick hacked together test to see if logging in is hard
-		//realistically this should query the db for user details
+
 		if(u_name.Equals("RianF2") && p_word.Equals("banana"))
 		{
 			Debug.Log("Logging in...yay!!!");
-			SceneManager.LoadScene("load_screen");
+			SceneManager.LoadScene("menu_screen");
 		}
 	}
 }
