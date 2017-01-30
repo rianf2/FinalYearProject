@@ -1,16 +1,17 @@
 <html>
 	<head>
 		<title>Final Year Project</title>
-		<link rel="stylesheet" href="styles.css">
-		<script src="angular.min.js"></script>
-		<script src="app.js"></script>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/angular.min.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 
 	<body ng-app="app">
 
 	<!--Show: <input type="checkbox" ng-model="myVar">
 	<div ng-show="myVar"> this can be used to validate credentials-->
-		<div align="center" class="container" ng-controller="appController" ng-hide="createAccount">
+		<div align="center" class="container" ng-controller="LeaderboardController">
 			<table>
 				<thead>
 					<tr>
@@ -35,30 +36,38 @@
 					</tr>
 				</tbody>
 			</table>
+			<button ng-click="showCreation()">Create account</button>
 		</div>
 	<!--</div>-->
-		<p align="center">Don't have an account? Click here to create one <input type="checkbox" ng-model="createAccount"></p>
-		<button ng-click="createAccount=true">Create account</button>
-		<button ng-click="createAccount=false">Login</button>
-	<!-- THIS SHOULD ONLY APPEAR WHEN CHECKBOX IS CHECKED, CURRENTLY ONLY SHOWING ALWAYS
-		<div ng-hide="createAccount=true">
-			<div align="center" class="login_div" ng-controller="appCtrl">
+
+
+
+			<div align="center" ng-show="createAccount" class="login_div" ng-controller="CreateAccountController">
 				<br><br><br>
 				<h1>Final Year Project</h1>
 				<input type="text" placeholder="Email" ng-model="user.email">
-				<br>
-				<span ng-show="$error.user.email">Email address is invalid</span>
 				<br><br><br>
-				<input type="password" placeholder="Username" ng-model="user.name">
+				<input type="text" placeholder="Username" ng-model="user.username">
 				<br><br><br>
 				<input type="password" placeholder="Password" ng-model="user.password">
 				<br><br><br>
-				Username = {{user.name}}<br>Password={{user.password}}<br>Email={{user.email}}
+				<button type="button" ng-click="createUser()">Create Account</button>
 				<br><br><br>
-				<button type="button" ng-click="buttonClicked(user.name, user.password)">Login!</button>
-				<br><br><br>
+
+				<div class="alert alert-info">
+					<p><b>Suggestion: </b> use a different password than your usual one. Do you really trust me to handle
+					passwords properly?</p>
+				</div>
 			</div>
-		</div>
-		-->
+
+	<!--<div align="center" ng-controller="LoginController">
+		<br><br><br>
+		<input type="text" placeholder="Username" ng-model="user.username">
+		<br><br><br>
+		<input type="password" placeholder="Password" ng-model="user.password">
+		<br><br><br>
+		<button type="button" class="btn btn-default" ng-click="login()">Login</button>
+	</div>-->
+
 	</body>
 </html>

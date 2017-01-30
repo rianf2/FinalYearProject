@@ -8,5 +8,9 @@
 	background-color: powderblue;
 	margin: auto;
 	width: 400px;
-	height: 450;
+	height: 450px;
+}
+
+::-webkit-input-placeholder{
+	text-align: center;
 }

@@ -18,3 +18,11 @@ A MEAN stack uses these technologies:  [Mongo DB](https://www.mongodb.com/), [Ex
 Game is coded in C# using the [Unity Game Engine](https://unity3d.com/)
 
 ---
+##Software to have installed on PC
+Robomongo for interacting with database without using console
+
+Webstorm
+
+mongoDB
+
+Texmaker and LaTex for Windows
