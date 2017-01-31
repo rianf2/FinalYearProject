@@ -1,11 +1,10 @@
 .body_background{
 	/*TODO: replace this with a background image*/
-	background-color: lightgrey;
+	background-color: whitesmoke;
 }
 
-.login_div{
+.borders{
 	/*TODO: change colour and make somewhat transparent*/
-	background-color: powderblue;
 	margin: auto;
 	width: 400px;
 	height: 450px;

@@ -27,15 +27,18 @@ app.controller("CreateAccountController", ["$scope", "$http", function ($scope, 
 
         $http.post("/userDetails", $scope.user).success(function(res){
             console.log(res);
-            alert("User added");
+            alert("Your details have been entered " + $scope.user.username);
+            location.reload(true);
         });
+    };
+
+    $scope.toggle = function(){
+        $scope.createAccount = !$scope.createAccount;
     };
 }]);
 
 app.controller("LoginController", ["$scope", "$http", function($scope, $http){
     console.log("Using LoginController");
-
-    var loggedIn = false;
 
     var username = "";
     var password = "";
@@ -49,6 +52,9 @@ app.controller("LoginController", ["$scope", "$http", function($scope, $http){
         console.log("Password: " + password);
     };
 
+    $scope.showLogin = function(){
+        $scope.loginDetails = !$scope.loginDetails;
+    };
 }]);
 
 

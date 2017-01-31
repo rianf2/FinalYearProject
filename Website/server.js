@@ -37,7 +37,7 @@ app.post("/userDetails", function(req, res){
     });
 });
 
-app.post("/login", function(req, res){
+app.get("/userDetails", function(req, res){
    console.log("GET request for one user");
 
    var query = {
@@ -55,6 +55,19 @@ app.post("/login", function(req, res){
       }
       res.json(doc);
    });
+});
+
+app.put("/userDetails/:id", function(req, res){
+    var userID = res.params.id;
+
+    db.users.findAndModify({
+        query: {_id: mongo.id.ObjectId(userID)},
+        update: {$set: {highscore: res.body.highscore,
+                        highestLevel: res.body.highestLevel,
+                        timeplayed: res.body.timeplayed}},
+        new: true}, function(err, doc){
+        res.json(doc);
+    });
 });
 
 app.listen(port);

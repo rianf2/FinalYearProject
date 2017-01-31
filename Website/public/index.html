@@ -7,67 +7,65 @@
 		<script src="js/app.js"></script>
 	</head>
 
-	<body ng-app="app">
+	<body ng-app="app" class="body_background">
 
-	<!--Show: <input type="checkbox" ng-model="myVar">
-	<div ng-show="myVar"> this can be used to validate credentials-->
 		<div align="center" class="container" ng-controller="LeaderboardController">
-			<table>
-				<thead>
-					<tr>
+			<h1>Final Year Project</h1>
+			<br><br><br>
+			<table class="table table-striped">
+				<thead align="center">
+					<tr align="center">
 						<th>Username</th>
 						<th>High Score</th>
 						<th>Time Played</th>
-						<th>&nbsp;</th>
-					</tr>>
+					</tr>
 				</thead>
 
 				<tbody>
-					<tr>
-						<td input-class="form-control" ng-model="user.name"></td>
-						<td input-class="form-control" ng-model="user.highscore"></td>
-						<td input-class="form-control" ng-model="user.timeplayed"></td>
-					</tr>
-
-					<tr ng-repeat="u in user">
+					<!--The "|" is a filter, mention in report-->
+					<tr ng-repeat="u in user|limitTo: 5" align="center">
 						<td>{{u.username}}</td>
 						<td>{{u.highscore}}</td>
 						<td>{{u.highestLevel}}</td>
 					</tr>
 				</tbody>
 			</table>
-			<button ng-click="showCreation()">Create account</button>
 		</div>
 	<!--</div>-->
+			<div align="center" class="borders" ng-controller="CreateAccountController">
+				<br>
+				<div><a href="" ng-click="toggle()">Don't have an account? Create one here!</a></div>
+				<br>
 
+				<div ng-show="createAccount">
+					<input type="text" class="form-control" placeholder="Email" ng-model="user.email">
+					<br>
+					<input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+					<br>
+					<input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+					<br>
+					<button type="button" class="btn btn-primary" ng-click="createUser()">Create Account</button>
+					<br><br><br>
 
-
-			<div align="center" ng-show="createAccount" class="login_div" ng-controller="CreateAccountController">
-				<br><br><br>
-				<h1>Final Year Project</h1>
-				<input type="text" placeholder="Email" ng-model="user.email">
-				<br><br><br>
-				<input type="text" placeholder="Username" ng-model="user.username">
-				<br><br><br>
-				<input type="password" placeholder="Password" ng-model="user.password">
-				<br><br><br>
-				<button type="button" ng-click="createUser()">Create Account</button>
-				<br><br><br>
-
-				<div class="alert alert-info">
-					<p><b>Suggestion: </b> use a different password than your usual one. Do you really trust me to handle
-					passwords properly?</p>
+					<div class="alert alert-info">
+						<p><b>Suggestion: </b> use a different password than your usual one. Do you really trust me to handle
+						passwords properly?</p>
+					</div>
 				</div>
 			</div>
 
-	<!--<div align="center" ng-controller="LoginController">
-		<br><br><br>
-		<input type="text" placeholder="Username" ng-model="user.username">
-		<br><br><br>
-		<input type="password" placeholder="Password" ng-model="user.password">
-		<br><br><br>
-		<button type="button" class="btn btn-default" ng-click="login()">Login</button>
-	</div>-->
+	<div align="center" class="borders" ng-controller="LoginController">
+		<br>
+		<div><a href="" ng-click="showLogin()">Already have an account? Log in here!</a></div>
+		<br>
+		<div ng-show="loginDetails">
+			<input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+			<br><br><br>
+			<input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+			<br><br><br>
+			<button type="button" class="btn btn-primary" ng-click="login()">Login</button>
+		</div>
+	</div>
 
 	</body>
 </html>
