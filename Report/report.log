@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  16 JAN 2017 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  5 FEB 2017 16:32
 entering extended mode
 **./report.tex
 (report.tex
@@ -59,36 +59,68 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-) (report.aux)
+)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
+ty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
+y"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.s
+ty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
+ty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks15
+
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
+fg")) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 ("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
+\scratchcounter=\count91
+\scratchdimen=\dimen113
 \scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen114
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks17
 )
 ("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
 ds.sty"
@@ -99,10 +131,6 @@ Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 .sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
-y"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -144,14 +172,44 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 7.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 7.
- [1
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 433.62001pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=433.62001pt
+* \textheight=650.43001pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-{C:/Users/Rian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(report.toc
+[1
+
+{C:/Users/Rian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+[3] [4] (report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -162,28 +220,324 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
- <photo.png, id=7, 367.3725pt x 388.45125pt>
-File: photo.png Graphic file (type png)
- <use photo.png>
-Package pdftex.def Info: photo.png used on input line 25.
-(pdftex.def)             Requested size: 183.68579pt x 194.22514pt.
+ [5] [6]
 
-[1 <./photo.png>] (report.aux) ) 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \end{center}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{center}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+
+
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+
+Overfull \hbox (1.9357pt too wide) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/12 Released| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 vaders
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/12 Arcade,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 Atari 2600,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 ter-tain-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/12 1978,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 1980,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 1985,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 vaders Part
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 II, Space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 In-vaders
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 Deluxe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\OT1/cmr/m/n/12 Arcade,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\OT1/cmr/m/n/12 1979,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\OT1/cmr/m/n/12 Gameboy ver-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 al-lowed mul-ti-player,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 USA ver-sion had
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 vaders X
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/cmr/m/n/12 Playstation,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 64, Game
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 vaders
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 Evo-lu-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 vaders:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\OT1/cmr/m/n/12 Playstation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\OT1/cmr/m/n/12 Updated graph-ics,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 sounds and game-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\OT1/cmr/m/n/12 play, mul-ti-player
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+\OT1/cmr/m/n/12 vaders
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+\OT1/cmr/m/n/12 Playsta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+\OT1/cmr/m/n/12 Portable,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]\OT1/cmr/m/n/12 2008,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\OT1/cmr/m/n/12 Space In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\OT1/cmr/m/n/12 vaders
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\OT1/cmr/m/n/12 In-fin-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\OT1/cmr/m/n/12 2009,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\OT1/cmr/m/n/12 2010,
+ []
+
+[3] [4]
+! You can't use `macro parameter character #' in horizontal mode.
+l.145 ...most widely used language for Unity is C#
+                                                  . JavaScript can also be u...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.147 ... its better support and documentation, C#
+                                                   will be the language used...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<json_no_id.PNG, id=36, 201.75375pt x 76.03406pt>
+File: json_no_id.PNG Graphic file (type png)
+ <use json_no_id.PNG>
+Package pdftex.def Info: json_no_id.PNG used on input line 163.
+(pdftex.def)             Requested size: 201.75325pt x 76.03386pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 	\caption
+                Figure 3.1: Data in JSON format
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[5] [6 <./json_no_id.PNG>] [7] [8] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 1499 strings out of 493333
- 22038 string characters out of 3130577
- 78359 words of memory out of 3000000
- 5037 multiletter control sequences out of 15000+200000
- 8808 words of font info for 31 fonts, out of 3000000 for 9000
+ 1992 strings out of 493333
+ 29640 string characters out of 3130577
+ 100987 words of memory out of 3000000
+ 5514 multiletter control sequences out of 15000+200000
+ 7894 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,25p,262b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rian/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (2 pages, 48546 bytes).
+ 40i,8n,25p,491b,177s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Rian/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on report.pdf (14 pages, 66154 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,6 +15,6 @@ public class ClickToRegister : MonoBehaviour {
 
 	public void goToLink()
 	{
-		Application.OpenURL("http://www.google.com");
+		Application.OpenURL("http:localhost:1337");
 	}
 }

@@ -12,6 +12,14 @@ public class Login : MonoBehaviour {
 
 	private string u_name;
 	private string p_word;
+	private string url;
+
+	void Start()
+	{
+		url = "http://localhost:1337/userDetails";
+		WWW www = new WWW(url);
+		StartCoroutine(serverInteract(www));
+	}
 
 	// Update is called once per frame
 	void Update () {
@@ -42,11 +50,24 @@ public class Login : MonoBehaviour {
 		Debug.Log(u_name);
 		Debug.Log(p_word);
 
-
 		if(u_name.Equals("RianF2") && p_word.Equals("banana"))
 		{
 			Debug.Log("Logging in...yay!!!");
 			SceneManager.LoadScene("menu_screen");
+		}
+	}
+
+	IEnumerator serverInteract(WWW www)
+	{
+		yield return www;
+
+		if(www.error == null)
+		{
+			Debug.Log("WWW okay: " + www.text);
+		}
+		else
+		{
+			Debug.Log("WWW error: " + www.error);
 		}
 	}
 }
