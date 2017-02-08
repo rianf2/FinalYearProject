@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Bug Reporting Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/bug_app.js"></script>
+    </head>
+
+    <body ng-app="bug_app" class="body_background">
+
+
+    <div align="center" class="borders" ng-controller="BugController">
+        <h1>FYP Bug Reporter</h1>
+        <br>
+        <input type="text" class="form-control" placeholder="Username or Name" ng-model="user.name">
+        <span ng-show="!user.name">Please enter a name!</span>
+        <br>
+        <textarea type="text" rows="4" cols="50" class="form-control" placeholder="Report a bug" ng-model="user.problem"></textarea>
+        <span ng-show="!user.problem">Please enter a bug!</span>
+        <br>
+        <button type="button" class="btn btn-primary" ng-click="report()">Report Bug</button>
+        <br><br><br>
+    </div>
+
+    </body>
+</html>
