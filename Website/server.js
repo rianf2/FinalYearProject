@@ -1,8 +1,10 @@
 var express = require("express");
 var app = express();
 var port = 1337;
+var path = require("path");
 var mongo = require("mongojs");
-var db = mongo("FYP", ["users"]);
+var usersDB = mongo("FYP", ["users"]);
+var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
 //var bcrypt = require("bcrypt");
 
@@ -12,7 +14,7 @@ app.use(parser.json());
 app.get("/userDetails", function(req, res){
     console.log("GET request for /userDetails");
 
-   db.users.find(function (err, docs) {
+    usersDB.users.find(function (err, docs) {
 
        if(err)
        {
@@ -28,7 +30,7 @@ app.post("/userDetails", function(req, res){
     console.log(req.body);
 
 
-    db.users.insert(req.body, function(err, doc){
+    usersDB.users.insert(req.body, function(err, doc){
         if(err)
         {
             console.log(err);
@@ -48,7 +50,7 @@ app.get("/userDetails", function(req, res){
    console.log("Username: " + req.user.username);
    console.log("Password: " + req.user.password);
 
-   db.users.findOne(query, function(err, doc){
+    usersDB.users.findOne(query, function(err, doc){
       if(err)
       {
           console.log(err);
@@ -60,7 +62,7 @@ app.get("/userDetails", function(req, res){
 app.put("/userDetails/:id", function(req, res){
     var userID = res.params.id;
 
-    db.users.findAndModify({
+    usersDB.users.findAndModify({
         query: {_id: mongo.id.ObjectId(userID)},
         update: {$set: {highscore: res.body.highscore,
                         highestLevel: res.body.highestLevel,
@@ -69,6 +71,24 @@ app.put("/userDetails/:id", function(req, res){
         res.json(doc);
     });
 });
+
+app.get('/bugs',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/bugs.html'));
+});
+
+app.post("/bugReports", function(req, res){
+    console.log(req.body);
+
+
+    bugsDB.bugs.insert(req.body, function(err, doc){
+        if(err)
+        {
+            console.log(err);
+        }
+        res.json(doc);
+    });
+});
+
 
 app.listen(port);
 
