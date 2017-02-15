@@ -16,7 +16,7 @@
         <input type="text" class="form-control" placeholder="Username or Name" ng-model="user.name">
         <span ng-show="!user.name">Please enter a name!</span>
         <br>
-        <textarea type="text" rows="4" cols="50" class="form-control" placeholder="Report a bug" ng-model="user.problem"></textarea>
+        <textarea type="text" rows="4" cols="50" class="form-control" placeholder="Report a bug in 500 words or less" ng-model="user.problem" maxlength="500"></textarea>
         <span ng-show="!user.problem">Please enter a bug!</span>
         <br>
         <button type="button" class="btn btn-primary" ng-click="report()">Report Bug</button>

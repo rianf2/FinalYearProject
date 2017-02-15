@@ -4,23 +4,26 @@ using System.Collections;
 public class PlayerController : MonoBehaviour 
 {
 	public GameObject missile;
-	private float speed = 15.0f;
-	private float xMin, xMax; 
-	public float projectileSpeed;
 
-	// Use this for initialization
-	void Start () {
+	private float speed = 15.0f;
+	private int health = 250;
+	private float xMin, xMax; 
+	private float projectileSpeed = 10f;
+
+	void Start () 
+	{
 		float dist = transform.position.z - Camera.main.transform.position.z;
 
 		Vector3 leftBound = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, dist));
 		Vector3 rightBound = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, dist));
 
-		xMin = leftBound.x + 0.6f; //finetuned variable
+		xMin = leftBound.x + 0.6f;
 		xMax = rightBound.x - 0.6f;
 	}
 	
-	// Update is called once per frame
-	void Update () {
+
+	void Update () 
+	{
 		
 		/*
 		 * For report: there was a problem here. Input.GetKeyDown only 
@@ -59,5 +62,22 @@ public class PlayerController : MonoBehaviour
 		Vector3 offset = new Vector3(0, 1, 0);
 		GameObject beam = Instantiate(missile, transform.position + offset, Quaternion.identity) as GameObject;
 		beam.GetComponent<Rigidbody2D>().velocity = new Vector3(0, projectileSpeed, 0);
+	}
+
+	void OnTriggerEnter2D(Collider2D collider)
+	{
+		Projectile laser = collider.gameObject.GetComponent<Projectile>();
+
+		if(laser)
+		{
+			health -= laser.getDamage();
+			Debug.Log(health);
+			laser.hit();
+
+			if(health <= 0)
+			{
+				Destroy(gameObject);
+			}
+		}
 	}
 }
