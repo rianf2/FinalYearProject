@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour {
 	private float frequency = 0.5f;
 	private int value = 10;
 	private ScoreController scoreController;
+	public AudioClip shootSound; //link to audio: http://www.freesound.org/people/jobro/sounds/35679/
+	public AudioClip deadSound; //link to audio: http://www.freesound.org/people/wubitog/sounds/200465/
 
 	void Start () 
 	{
@@ -41,8 +43,7 @@ public class Enemy : MonoBehaviour {
 			laser.hit();
 			if(health <= 0)
 			{
-				scoreController.score(value);
-				Destroy(gameObject);
+				dead();
 			}
 		}
 	}
@@ -57,5 +58,13 @@ public class Enemy : MonoBehaviour {
 		Vector3 startPosition = transform.position + new Vector3(0, -1, 0);
 		GameObject missile = Instantiate(projectile, startPosition, Quaternion.identity) as GameObject;
 		missile.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -speed);
+		AudioSource.PlayClipAtPoint(shootSound, transform.position);
+	}
+
+	void dead()
+	{
+		AudioSource.PlayClipAtPoint(deadSound, transform.position);
+		scoreController.score(value);
+		Destroy(gameObject);
 	}
 }

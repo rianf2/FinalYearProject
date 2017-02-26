@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	private int health = 250;
 	private float xMin, xMax; 
 	private float projectileSpeed = 10f;
+	public AudioClip shootSound; //link to audio: http://www.freesound.org/people/djfroyd/sounds/348163/
 
 	void Start () 
 	{
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
 		Vector3 offset = new Vector3(0, 1, 0);
 		GameObject beam = Instantiate(missile, transform.position + offset, Quaternion.identity) as GameObject;
 		beam.GetComponent<Rigidbody2D>().velocity = new Vector3(0, projectileSpeed, 0);
+		AudioSource.PlayClipAtPoint(shootSound, transform.position);
 	}
 
 	void OnTriggerEnter2D(Collider2D collider)
