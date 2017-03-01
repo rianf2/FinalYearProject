@@ -10,6 +10,7 @@ app.controller("LeaderboardController", ["$scope", "$http", function($scope, $ht
         $http.get("/userDetails").success(function(res){
             console.log(res);
             $scope.user = res;
+
         });
     };
 
@@ -50,6 +51,11 @@ app.controller("LoginController", ["$scope", "$http", function($scope, $http){
 
         console.log("Username: " + username);
         console.log("Password: " + password);
+
+        $http.get("/userDetails/" + username).success(function(res){
+            console.log(res);
+            $scope.user = res;
+        });
     };
 
     $scope.showLogin = function(){

@@ -16,9 +16,7 @@ public class Login : MonoBehaviour {
 
 	void Start()
 	{
-		url = "http://localhost:1337/userDetails";
-		WWW www = new WWW(url);
-		StartCoroutine(serverInteract(www));
+		
 	}
 
 	// Update is called once per frame
@@ -55,6 +53,11 @@ public class Login : MonoBehaviour {
 			Debug.Log("Logging in...yay!!!");
 			SceneManager.LoadScene("menu_screen");
 		}
+
+		url = "http://localhost:1337/userDetails/" + u_name;
+		Debug.Log(url);
+		WWW www = new WWW(url);
+		StartCoroutine(serverInteract(www));
 	}
 
 	IEnumerator serverInteract(WWW www)

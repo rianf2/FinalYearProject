@@ -1,3 +1,5 @@
+'use strict'
+
 var express = require("express");
 var app = express();
 var port = 1337;
@@ -39,23 +41,29 @@ app.post("/userDetails", function(req, res){
     });
 });
 
-app.get("/userDetails", function(req, res){
+app.get("/userDetails/:username", function(req, res){
    console.log("GET request for one user");
 
+   var username = req.params.username;
+   var password = req.params.password;
+
    var query = {
-                    "username": req.user.username,
-                    "password": req.user.password
+                    "username": username
+                    //"password": password
                };
 
-   console.log("Username: " + req.user.username);
-   console.log("Password: " + req.user.password);
-
-    usersDB.users.findOne(query, function(err, doc){
+   console.log(query.username);
+    usersDB.users.findOne(query, function(err, docs){
       if(err)
       {
           console.log(err);
       }
-      res.json(doc);
+
+      if(docs.password == password)
+      {
+          console.log(password);
+          res.json(docs);
+      }
    });
 });
 

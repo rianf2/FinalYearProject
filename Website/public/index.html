@@ -22,8 +22,8 @@
 				</thead>
 
 				<tbody>
-					<!--The "|" is a filter, mention in report-->
-					<tr ng-repeat="u in user|limitTo: 5" align="center">
+					<!--The "|" is a filter, mention in report. order of filter is important, finding-->
+					<tr ng-repeat="u in user | orderBy: '-highscore' | limitTo: 5 " align="center">
 						<td>{{u.username}}</td>
 						<td>{{u.highscore}}</td>
 						<td>{{u.highestLevel}}</td>
