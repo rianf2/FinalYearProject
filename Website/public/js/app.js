@@ -62,6 +62,3 @@ app.controller("LoginController", ["$scope", "$http", function($scope, $http){
         $scope.loginDetails = !$scope.loginDetails;
     };
 }]);
-
-
-

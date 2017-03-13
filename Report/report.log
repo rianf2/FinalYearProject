@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  5 FEB 2017 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  11 MAR 2017 13:07
 entering extended mode
 **./report.tex
 (report.tex
@@ -246,19 +246,25 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
 
 ("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
-
-Overfull \hbox (1.9357pt too wide) in paragraph at lines 120--120
-[]\OT1/cmr/m/n/12 Released| 
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []\OT1/cmr/m/n/12 Space In-
@@ -282,21 +288,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \OT1/cmr/m/n/12 ter-tain-ment
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]\OT1/cmr/m/n/12 1978,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/12 1980,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/12 1985,
  []
 
 
@@ -327,11 +318,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--123
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--123
 []\OT1/cmr/m/n/12 Arcade,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
-[]\OT1/cmr/m/n/12 1979,
  []
 
 
@@ -445,11 +431,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-[]\OT1/cmr/m/n/12 2008,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []\OT1/cmr/m/n/12 Space In-
  []
@@ -464,33 +445,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \OT1/cmr/m/n/12 In-fin-ity
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]\OT1/cmr/m/n/12 2009,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-\OT1/cmr/m/n/12 2010,
- []
-
 [3] [4]
-! You can't use `macro parameter character #' in horizontal mode.
-l.145 ...most widely used language for Unity is C#
-                                                  . JavaScript can also be u...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.147 ... its better support and documentation, C#
-                                                   will be the language used...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -521,23 +476,173 @@ l.165 	\caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[5] [6 <./json_no_id.PNG>] [7] [8] (report.aux) ) 
+[5] <json_id.PNG, id=41, 250.68657pt x 86.57344pt>
+File: json_id.PNG Graphic file (type png)
+ <use json_id.PNG>
+Package pdftex.def Info: json_id.PNG used on input line 193.
+(pdftex.def)             Requested size: 250.68594pt x 86.57321pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 	\caption
+                Figure 3.2: Data including the 12 byte hexadecimal {\_}id fi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6 <./json_no_id.PNG> <./json_id.PNG>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+[7] [8]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.245 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.52383pt too wide) in paragraph at lines 264--268
+[]\OT1/cmr/m/n/12 Bandai Namco \OT1/cmr/m/it/12 Space In-vaders Evo-lu-tion \OT
+1/cmr/m/n/12 [on-line], avail-able: https://www.bandainamc
+ []
+
+
+Overfull \hbox (0.83585pt too wide) in paragraph at lines 272--275
+\OT1/cmr/m/n/12 org/web/20080408152913/http://archive.gamespy.com/legacy/hallof
+fame/spa
+ []
+
+[9]
+Overfull \hbox (8.46124pt too wide) in paragraph at lines 276--278
+[]\OT1/cmr/m/n/12 IGN (2008) \OT1/cmr/m/it/12 Space In-vaders Ex-treme \OT1/cmr
+/m/n/12 [on-line], avail-able: http://ie.ign.com/games/space-
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.286 \hangindent=0.5in l/reference/bson-types/#
+                                                objectid [accessed 1 January...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Undefined control sequence.
+l.288 NodeJS (2017) \texit
+                          {Home} [online], available: https://nodejs.org/en/...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.17662pt too wide) in paragraph at lines 291--294
+[]\OT1/cmr/m/n/12 Stack Over-flow (2017) \OT1/cmr/m/it/12 Mon-goDB \OT1/cmr/m/n
+/12 [on-line], avail-able: http://stackoverflow.com/questio
+ []
+
+! Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+                   ,
+l.311 \hangindent=0.5in Boo for my project?}
+                                             [online], available: http://ans...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> How should I decide if I should use C##
+                                                  , JavaScript (UnityScript)...
+l.311 \hangindent=0.5in Boo for my project?}
+                                             [online], available: http://ans...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (0.27892pt too wide) in paragraph at lines 310--313
+\OT1/cmr/m/n/12 28/how-should-i-decide-if-i-should-use-c-javascript-u.html [ac-
+cessed 30 De-cem-
+ []
+
+[10] [11] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 1992 strings out of 493333
- 29640 string characters out of 3130577
+ 2000 strings out of 493333
+ 29753 string characters out of 3130577
  100987 words of memory out of 3000000
- 5514 multiletter control sequences out of 15000+200000
- 7894 words of font info for 28 fonts, out of 3000000 for 9000
+ 5520 multiletter control sequences out of 15000+200000
+ 8241 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,25p,491b,177s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Rian/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb>
-Output written on report.pdf (14 pages, 66154 bytes).
+ 40i,8n,25p,512b,174s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rian/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rian/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (17 pages, 100055 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

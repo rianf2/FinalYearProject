@@ -8,7 +8,7 @@ var mongo = require("mongojs");
 var usersDB = mongo("FYP", ["users"]);
 var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
-//var bcrypt = require("bcrypt");
+var bcrypt = require("bcrypt");
 
 app.use(express.static(__dirname + "/public"));
 app.use(parser.json());
@@ -22,16 +22,14 @@ app.get("/userDetails", function(req, res){
        {
            console.log(err);
        }
-
-       console.log(docs);
        res.json(docs);
    });
 });
 
 app.post("/userDetails", function(req, res){
-    console.log(req.body);
+    console.log("INSERTING A USER TO THE DATABASE.");
 
-
+    req.body.password = encryptPassword(req.body.password);
     usersDB.users.insert(req.body, function(err, doc){
         if(err)
         {
@@ -64,6 +62,7 @@ app.get("/userDetails/:username", function(req, res){
           console.log(password);
           res.json(docs);
       }
+        res.json(docs);
    });
 });
 
@@ -102,3 +101,22 @@ app.listen(port);
 
 console.log();
 console.log("Server runnning on port " + port);
+
+/*
+    Encryption: First: reverse the string
+                Second: loop through string and convert unicode
+                    character to hex character
+                Third: return encrypted string
+ */
+function encryptPassword(password)
+{
+    var encryptedPassword = "";
+    password.split("").reverse().join("");
+
+    for(var i = 0;i < password.length;i++)
+    {
+        encryptedPassword += password.charCodeAt(i).toString(16);
+    }
+
+    return encryptedPassword;
+}

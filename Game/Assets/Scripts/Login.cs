@@ -34,7 +34,7 @@ public class Login : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Return))
 		{
-			if(p_word != "")
+			if(p_word != "" && u_name != "")
 			{
 				login();
 			}
@@ -48,12 +48,6 @@ public class Login : MonoBehaviour {
 		Debug.Log(u_name);
 		Debug.Log(p_word);
 
-		if(u_name.Equals("RianF2") && p_word.Equals("banana"))
-		{
-			Debug.Log("Logging in...yay!!!");
-			SceneManager.LoadScene("menu_screen");
-		}
-
 		url = "http://localhost:1337/userDetails/" + u_name;
 		Debug.Log(url);
 		WWW www = new WWW(url);
@@ -66,11 +60,31 @@ public class Login : MonoBehaviour {
 
 		if(www.error == null)
 		{
-			Debug.Log("WWW okay: " + www.text);
+			Debug.Log(www.text);
+			string json = www.text;
+			Player p = new Player();
+			p = JsonUtility.FromJson<Player>(json);
+
+			if(p_word.Equals(p.password))
+			{
+				SceneManager.LoadScene("menu_screen");
+			}
+			else{
+				Debug.Log("SCENE ERROR");
+			}
 		}
 		else
 		{
-			Debug.Log("WWW error: " + www.error);
+			Debug.Log(www.error);
 		}
 	}
+}
+
+[System.Serializable]
+public class Player
+{
+	public string username;
+	public string password;
+	public int highscore;
+	public float time;
 }
