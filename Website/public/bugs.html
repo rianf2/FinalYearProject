@@ -10,18 +10,17 @@
     <body ng-app="bug_app" class="body_background">
 
 
-    <div align="center" class="borders" ng-controller="BugController">
+    <form name="form" align="center" class="borders" ng-controller="BugController">
         <h1>FYP Bug Reporter</h1>
         <br>
-        <input type="text" class="form-control" placeholder="Username or Name" ng-model="user.name">
-        <span ng-show="!user.name">Please enter a name!</span>
+        <input name="inputBox" type="text" class="form-control" placeholder="Username or Name" ng-model="user.name" required>
         <br>
-        <textarea type="text" rows="4" cols="50" class="form-control" placeholder="Report a bug in 500 words or less" ng-model="user.problem" maxlength="500"></textarea>
+        <textarea name="textBox" type="text" rows="4" cols="50" class="form-control" placeholder="Report a bug in 500 words or less" ng-model="user.problem" ng-maxlength="500" required></textarea>
         <span ng-show="!user.problem">Please enter a bug!</span>
         <br>
-        <button type="button" class="btn btn-primary" ng-click="report()">Report Bug</button>
+        <button type="button" class="btn btn-primary" ng-disabled="form.inputBox.$invalid || form.textBox.$invalid" ng-click="report()">Report Bug</button>
         <br><br><br>
-    </div>
+    </form>
 
     </body>
 </html>

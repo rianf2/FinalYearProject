@@ -4,9 +4,6 @@ bug_app.controller("BugController", ["$scope", "$http", function ($scope, $http)
     console.log("Using BugController");
 
     $scope.report = function(){
-        if($scope.user.name == undefined)
-            $scope.user.name = "UNDEFINED USER";
-
         $scope.user.dateReported = getCurrentDate();
         console.log($scope.user);
 
@@ -18,11 +15,6 @@ bug_app.controller("BugController", ["$scope", "$http", function ($scope, $http)
     };
 }]);
 
-function isStringEmpty(string)
-{
-    return(!string || 0 === string.length);
-}
-
 function getCurrentDate()
 {
     var today = new Date();
@@ -33,15 +25,10 @@ function getCurrentDate()
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
 
-    if(days < 10)
-    {
-        days = "0" + days;
-    }
-
-    if(month < 10)
-    {
-        month = "0" + month;
-    }
+    if(days < 10) { days = "0" + days; }
+    if(month < 10) { month = "0" + month; }
+    if(minutes < 10) { minutes = "0" + minutes; }
+    if(seconds < 10) { seconds = "0" + seconds; }
 
     today = days + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
     return today;
