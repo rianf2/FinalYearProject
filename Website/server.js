@@ -2,16 +2,19 @@
 
 var express = require("express");
 var app = express();
-var port = 1337;
+const PORT = 1337;
 var path = require("path");
 var mongo = require("mongojs");
 var usersDB = mongo("FYP", ["users"]);
 var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
 var bcrypt = require("bcrypt");
+var md5 = require("md5");
 
 app.use(express.static(__dirname + "/public"));
 app.use(parser.json());
+app.use(parser.urlencoded({ extended: true }));
+app.use(parser.json({ type: 'application/x-www-form-urlencoded' }));
 
 app.get("/userDetails", function(req, res){
     console.log("GET request for /userDetails");
@@ -29,7 +32,8 @@ app.get("/userDetails", function(req, res){
 app.post("/userDetails", function(req, res){
     console.log("INSERTING A USER TO THE DATABASE.");
 
-    req.body.password = encryptPassword(req.body.password);
+    //req.body.password = encryptPassword(req.body.password);
+    //console.log("ENCRYPTED PASSWORD: " + req.body.password);
     usersDB.users.insert(req.body, function(err, doc){
         if(err)
         {
@@ -39,42 +43,49 @@ app.post("/userDetails", function(req, res){
     });
 });
 
+/*
+    For report, username case must match that of whatever was inputted originally,
+    better to have it ignore the username case!!!
+ */
 app.get("/userDetails/:username", function(req, res){
-   console.log("GET request for one user");
+    var username = req.params.username;
+    var password = req.params.password;
 
-   var username = req.params.username;
-   var password = req.params.password;
+   console.log("GET request for " + username);
 
    var query = {
                     "username": username
                     //"password": password
                };
 
-   console.log(query.username);
+   console.log("HERE: " + query.username);
     usersDB.users.findOne(query, function(err, docs){
       if(err)
       {
           console.log(err);
       }
-
-      if(docs.password == password)
-      {
-          console.log(password);
-          res.json(docs);
-      }
         res.json(docs);
    });
 });
 
-app.put("/userDetails/:id", function(req, res){
-    var userID = res.params.id;
+/*
+    For report, originally using req.params.score and not req.body.score, lead to undefined data
+    must find out why!!!
 
+    This says post but in reality its a put request
+ */
+app.post("/userDetails/:username", function(req, res){
+    console.log("UPDATING A USER");
+
+    console.log("SCORE: " + req.body.score);
+    console.log("TIME: " + req.body.timePlayed);
+
+    //https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
     usersDB.users.findAndModify({
-        query: {_id: mongo.id.ObjectId(userID)},
-        update: {$set: {highscore: res.body.highscore,
-                        highestLevel: res.body.highestLevel,
-                        timeplayed: res.body.timeplayed}},
-        new: true}, function(err, doc){
+        query: { username: req.body.username },
+        update: { $set: {score: req.body.score, timePlayed: req.body.timePlayed}},
+        new: true }, function(err, doc) {
+        if(err) { console.log("Error " + err); }
         res.json(doc);
     });
 });
@@ -97,26 +108,43 @@ app.post("/bugReports", function(req, res){
 });
 
 
-app.listen(port);
+app.listen(PORT);
 
 console.log();
-console.log("Server runnning on port " + port);
+console.log("Server running since: " + getDate() + " on port: " + PORT);
 
 /*
-    Encryption: First: reverse the string
-                Second: loop through string and convert unicode
-                    character to hex character
-                Third: return encrypted string
+    Encryption: from bcrypt npm page, using async as it allows server
+    to respond to different requests while encrypting details
  */
 function encryptPassword(password)
 {
-    var encryptedPassword = "";
-    password.split("").reverse().join("");
+    const saltRounds = 10;
+    
+    bcrypt.genSalt(saltRounds, function (err, salt) {
+       bcrypt.hash(password, salt, function(err, hash){
+           console.log("ENCRYPTED PASSWORD: " + hash);
+           //this is where the hash should be returned
+           return hash;
+       });
+    });
+}
 
-    for(var i = 0;i < password.length;i++)
-    {
-        encryptedPassword += password.charCodeAt(i).toString(16);
-    }
+function getDate()
+{
+    var today = new Date();
+    var days = today.getDate();
+    var month = today.getMonth() + 1; // Starts at 0
+    var year = today.getFullYear();
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
 
-    return encryptedPassword;
+    if(days < 10) { days = "0" + days; }
+    if(month < 10) { month = "0" + month; }
+    if(minutes < 10) { minutes = "0" + minutes; }
+    if(seconds < 10) { seconds = "0" + seconds; }
+
+    today = days + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+    return today;
 }

@@ -1,18 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour 
 {
 	public GameObject missile;
 
+	private Player p;
 	private float speed = 15.0f;
 	private int health = 250;
 	private float xMin, xMax; 
 	private float projectileSpeed = 10f;
+	private ScoreController scoreController;
 	public AudioClip shootSound; //link to audio: http://www.freesound.org/people/djfroyd/sounds/348163/
+	private UsernameController uC;
+	private float timePlayed;
 
 	void Start () 
 	{
+		timePlayed = 0.0f;
 		float dist = transform.position.z - Camera.main.transform.position.z;
 
 		Vector3 leftBound = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, dist));
@@ -25,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
 	void Update () 
 	{
-		
+		timePlayed += Time.deltaTime;
 		/*
 		 * For report: there was a problem here. Input.GetKeyDown only 
 		 * registered when key was pressed (duh) ond only moved one unit.
@@ -44,6 +51,18 @@ public class PlayerController : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 		{
 			InvokeRepeating("shoot", 0.00001f, 0.2f);
+		}
+
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			p = new Player();
+			scoreController = GameObject.Find("ScoreText").GetComponent<ScoreController>();
+			uC = GameObject.Find("Username").GetComponent<UsernameController>();
+			Debug.Log(uC.getUsername());
+			Debug.Log("p.saveDetails()");
+			uC.setTimePlayed (uC.getTimePlayed () + Math.Round((timePlayed / 60), 2));
+			p.saveDetails(uC.getUsername(), scoreController.getScore(), uC.getTimePlayed());
+			SceneManager.LoadScene("menu_screen");
 		}
 		/*
 		 * There was a problem here, originally use else if but only 
@@ -79,6 +98,7 @@ public class PlayerController : MonoBehaviour
 			if(health <= 0)
 			{
 				Destroy(gameObject);
+				SceneManager.LoadScene("menu_screen");
 			}
 		}
 	}

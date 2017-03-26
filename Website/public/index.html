@@ -16,55 +16,41 @@
 				<thead>
 					<tr>
 						<th class="head">Username</th>
-						<th class="head">High Score</th>
-						<th class="head">Time Played</th>
+						<th class="head">Score</th>
+						<th class="head">Time Played (minutes)</th>
 					</tr>
 				</thead>
 
 				<tbody>
 					<!--The "|" is a filter, mention in report. order of filter is important, finding-->
-					<tr ng-repeat="u in user | orderBy: '-highscore' | limitTo: 5 " align="center">
+					<tr ng-repeat="u in user | orderBy: '-score' | limitTo: 5 " align="center">
 						<td>{{u.username}}</td>
-						<td>{{u.highscore}}</td>
-						<td>{{u.highestLevel}}</td>
+						<td>{{u.score}}</td>
+						<td>{{u.timePlayed}}</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	<!--</div>-->
-		<div align="center" class="borders" ng-controller="CreateAccountController">
+		<form name="form" align="center" class="borders" ng-controller="CreateAccountController">
 			<br>
 			<div><a href="" ng-click="toggle()">Don't have an account? Create one here!</a></div>
 			<br>
 
 			<div ng-show="createAccount">
-				<input type="text" class="form-control" placeholder="Email" ng-model="user.email">
+				<input name="email" type="email" class="form-control" placeholder="Email" ng-model="user.email" required>
 				<br>
-				<input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+				<input name="username" type="text" class="form-control" placeholder="Username (minimum 4 characters)" ng-model="user.username" ng-minlength="5" required>
 				<br>
-				<input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+				<input name="password" type="password" class="form-control" placeholder="Password (minimum 8 characters)" ng-model="user.password" ng-minlength="8" required>
 				<br>
-				<button type="button" class="btn btn-primary" ng-click="createUser()">Create Account</button>
+				<button type="button" class="btn btn-primary" ng-disabled="form.email.$invalid || form.password.$invalid || form.username.$invalid" ng-click="createUser()">Create Account</button>
 				<br><br><br>
 
 				<div class="alert alert-info">
-					<p><b>Suggestion: </b> use a different password than your usual one. Do you really trust me to handlepasswords properly?</p>
+					<p><b>Suggestion: </b> use a different password than your usual one. Do you really trust me to handle passwords properly?</p>
 				</div>
 			</div>
-		</div>
-
-		<div align="center" class="borders" ng-controller="LoginController">
-			<br>
-			<div><a href="" ng-click="showLogin()">Already have an account? Log in here!</a></div>
-			<br>
-			<div ng-show="loginDetails">
-				<input type="text" class="form-control" placeholder="Username" ng-model="user.username">
-				<br><br><br>
-				<input type="password" class="form-control" placeholder="Password" ng-model="user.password">
-				<br><br><br>
-				<button type="button" class="btn btn-primary" ng-click="login()">Login</button>
-			</div>
-		</div>
-
+		</form>
 	</body>
 </html>

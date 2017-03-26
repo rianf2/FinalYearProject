@@ -23,4 +23,9 @@ public class ScoreController : MonoBehaviour
 		currentScore = 0;
 		text.text = "Score: " + currentScore.ToString();
 	}
+
+	public int getScore()
+	{
+		return currentScore;
+	}
 }

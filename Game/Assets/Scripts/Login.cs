@@ -13,14 +13,16 @@ public class Login : MonoBehaviour {
 	private string u_name;
 	private string p_word;
 	private string url;
+	private Player p;
+	private UsernameController uC;
 
 	void Start()
 	{
-		
+		uC = GameObject.Find("Username").GetComponent<UsernameController>();
 	}
 
-	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		u_name = username.GetComponent<InputField>().text;
 		p_word = password.GetComponent<InputField>().text;
 
@@ -43,13 +45,7 @@ public class Login : MonoBehaviour {
 
 	public void login()
 	{
-		//czech this out: answers.unity3d.com/questions/935800/
-
-		Debug.Log(u_name);
-		Debug.Log(p_word);
-
 		url = "http://localhost:1337/userDetails/" + u_name;
-		Debug.Log(url);
 		WWW www = new WWW(url);
 		StartCoroutine(serverInteract(www));
 	}
@@ -60,12 +56,15 @@ public class Login : MonoBehaviour {
 
 		if(www.error == null)
 		{
-			Debug.Log(www.text);
 			string json = www.text;
-			Player p = new Player();
+			Debug.Log(json);
+			p = new Player();
 			p = JsonUtility.FromJson<Player>(json);
+			uC.setTimePlayed(p.timePlayed);
+			uC.setUsername (p.username);
+			Debug.Log(uC.getUsername());
 
-			if(p_word.Equals(p.password))
+			if(p_word.Equals(p.getPassword() ))
 			{
 				SceneManager.LoadScene("menu_screen");
 			}
@@ -78,13 +77,4 @@ public class Login : MonoBehaviour {
 			Debug.Log(www.error);
 		}
 	}
-}
-
-[System.Serializable]
-public class Player
-{
-	public string username;
-	public string password;
-	public int highscore;
-	public float time;
 }
