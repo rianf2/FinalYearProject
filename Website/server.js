@@ -10,6 +10,7 @@ var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
 //var bcrypt = require("bcrypt");
 var md5 = require("md5");
+var fs = require("fs");
 
 app.use(express.static(__dirname + "/public"));
 app.use(parser.json());
@@ -104,6 +105,19 @@ app.post("/bugReports", function(req, res){
             console.log(err);
         }
         res.json(doc);
+    });
+
+    var report = {
+                    name: req.body.name,
+                    problem: req.body.problem,
+                    dateReported: req.body.dateReported
+                 };
+
+    fs.appendFile("bugs.json", JSON.stringify(report, null, "\t"), function(err){
+        if(err)
+        {
+            console.log("File I/O error");
+        }
     });
 });
 

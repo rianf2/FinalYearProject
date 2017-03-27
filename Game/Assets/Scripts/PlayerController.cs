@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	private float xMin, xMax; 
 	private float projectileSpeed = 10f;
 	private ScoreController scoreController;
+	private HealthController healthController;
 	public AudioClip shootSound; //link to audio: http://www.freesound.org/people/djfroyd/sounds/348163/
 	private UsernameController uC;
 	private float timePlayed;
@@ -20,6 +21,10 @@ public class PlayerController : MonoBehaviour
 	void Start () 
 	{
 		timePlayed = 0.0f;
+		healthController = GameObject.Find("HealthText").GetComponent<HealthController>();
+		p = new Player();
+		scoreController = GameObject.Find("ScoreText").GetComponent<ScoreController>();
+		uC = GameObject.Find("Username").GetComponent<UsernameController>();
 		float dist = transform.position.z - Camera.main.transform.position.z;
 
 		Vector3 leftBound = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, dist));
@@ -55,9 +60,8 @@ public class PlayerController : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
-			p = new Player();
-			scoreController = GameObject.Find("ScoreText").GetComponent<ScoreController>();
-			uC = GameObject.Find("Username").GetComponent<UsernameController>();
+
+
 			Debug.Log(uC.getUsername());
 			Debug.Log("p.saveDetails()");
 			uC.setTimePlayed (uC.getTimePlayed () + Math.Round((timePlayed / 60), 2));
@@ -91,12 +95,14 @@ public class PlayerController : MonoBehaviour
 
 		if(laser)
 		{
-			health -= laser.getDamage();
-			Debug.Log(health);
+			healthController.decrease( laser.getDamage() );
+			Debug.Log(healthController.getHealth());
 			laser.hit();
 
-			if(health <= 0)
+			if(healthController.getHealth() <= 0)
 			{
+				uC.setTimePlayed (uC.getTimePlayed () + Math.Round((timePlayed / 60), 2));
+				p.saveDetails(uC.getUsername(), scoreController.getScore(), uC.getTimePlayed());
 				Destroy(gameObject);
 				SceneManager.LoadScene("menu_screen");
 			}

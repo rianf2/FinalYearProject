@@ -5,7 +5,6 @@ public class Enemy : MonoBehaviour {
 
 	public GameObject projectile;
 
-	private float shootProbability;
 	private float speed = 10;
 	private int health = 150;
 	private float frequency = 0.5f;
@@ -17,7 +16,6 @@ public class Enemy : MonoBehaviour {
 	void Start () 
 	{
 		scoreController = GameObject.Find("ScoreText").GetComponent<ScoreController>();
-		shootProbability = Random.value;
 	}
 	
 	// Update is called once per frame

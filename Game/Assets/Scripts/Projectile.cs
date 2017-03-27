@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 	//needs to be monobehaviour to register with UnityAPI???
-	private int damage = 100;
+	private int damage = 25;
 
 	public int getDamage()
 	{

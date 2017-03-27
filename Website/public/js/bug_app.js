@@ -5,10 +5,8 @@ bug_app.controller("BugController", ["$scope", "$http", function ($scope, $http)
 
     $scope.report = function(){
         $scope.user.dateReported = getCurrentDate();
-        console.log($scope.user);
 
         $http.post("/bugReports", $scope.user).success(function(res){
-            console.log(res);
             alert("The bug has been reported, thank you!");
             location.reload();
         });
