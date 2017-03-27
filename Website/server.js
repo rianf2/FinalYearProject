@@ -8,7 +8,7 @@ var mongo = require("mongojs");
 var usersDB = mongo("FYP", ["users"]);
 var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
-var bcrypt = require("bcrypt");
+//var bcrypt = require("bcrypt");
 var md5 = require("md5");
 
 app.use(express.static(__dirname + "/public"));
@@ -30,7 +30,7 @@ app.get("/userDetails", function(req, res){
 });
 
 app.post("/userDetails", function(req, res){
-    console.log("INSERTING A USER TO THE DATABASE.");
+    console.log("Inserting " + req.body.username + " into the database.");
 
     //req.body.password = encryptPassword(req.body.password);
     //console.log("ENCRYPTED PASSWORD: " + req.body.password);
@@ -51,14 +51,13 @@ app.get("/userDetails/:username", function(req, res){
     var username = req.params.username;
     var password = req.params.password;
 
-   console.log("GET request for " + username);
+   console.log("Recieved a GET request for " + username);
 
    var query = {
                     "username": username
                     //"password": password
                };
 
-   console.log("HERE: " + query.username);
     usersDB.users.findOne(query, function(err, docs){
       if(err)
       {
@@ -75,10 +74,8 @@ app.get("/userDetails/:username", function(req, res){
     This says post but in reality its a put request
  */
 app.post("/userDetails/:username", function(req, res){
-    console.log("UPDATING A USER");
-
-    console.log("SCORE: " + req.body.score);
-    console.log("TIME: " + req.body.timePlayed);
+    console.log("Updataing details for " + req.body.username);
+    console.log("SCORE: " + req.body.score + ", TIME: " +req.body.timePlayed);
 
     //https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
     usersDB.users.findAndModify({
@@ -95,6 +92,9 @@ app.get('/bugs',function(req,res){
 });
 
 app.post("/bugReports", function(req, res){
+    /*
+        Have this output to a log file too for redundancy??
+     */
     console.log(req.body);
 
 
@@ -119,7 +119,7 @@ console.log("Server running since: " + getDate() + " on port: " + PORT);
  */
 function encryptPassword(password)
 {
-    const saltRounds = 10;
+    /*const saltRounds = 10;
     
     bcrypt.genSalt(saltRounds, function (err, salt) {
        bcrypt.hash(password, salt, function(err, hash){
@@ -127,7 +127,7 @@ function encryptPassword(password)
            //this is where the hash should be returned
            return hash;
        });
-    });
+    });*/
 }
 
 function getDate()
