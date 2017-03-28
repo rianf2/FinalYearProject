@@ -15,13 +15,13 @@ public class HealthController : MonoBehaviour {
 	public void decrease(int damage)
 	{
 		currentHealth -= damage;
-		text.text = "Score: " + currentHealth.ToString();
+		text.text = "Health: " + currentHealth.ToString();
 	}
 
 	public void reset()
 	{
 		currentHealth = 0;
-		text.text = "Score: " + currentHealth.ToString();
+		text.text = "Health: " + currentHealth.ToString();
 	}
 
 	public int getHealth()

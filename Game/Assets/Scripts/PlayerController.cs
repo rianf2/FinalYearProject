@@ -96,7 +96,6 @@ public class PlayerController : MonoBehaviour
 		if(laser)
 		{
 			healthController.decrease( laser.getDamage() );
-			Debug.Log(healthController.getHealth());
 			laser.hit();
 
 			if(healthController.getHealth() <= 0)

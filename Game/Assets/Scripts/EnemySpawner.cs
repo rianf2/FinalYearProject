@@ -48,7 +48,6 @@ public class EnemySpawner : MonoBehaviour {
 
 		if(leftFormation < xMin)
 		{
-			Debug.Log("TIME TO GO RIGHT");
 			moveRight = true;
 		}
 		else if(rightFormation > xMax)
@@ -59,13 +58,11 @@ public class EnemySpawner : MonoBehaviour {
 			 * Solved by checking is RF > xMax...think of better way to
 			 * write this for report :)
 			 */
-			Debug.Log("TIME TO GO LEFT");
 			moveRight = false;
 		}
 
 		if(allEnemiesDead())
 		{
-			Debug.Log("All enemies are dead");
 			spawnTilFull();
 		}
 	}
@@ -117,5 +114,15 @@ public class EnemySpawner : MonoBehaviour {
 		{
 			Invoke("spawnTilFull", spawnDelay); //execute this every 0.5 seconds
 		}
+	}
+
+	public void setSpeed(float speed)
+	{
+		this.speed = speed;
+	}
+
+	public float getSpeed()
+	{
+		return speed;
 	}
 }
