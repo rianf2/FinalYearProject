@@ -36,9 +36,9 @@ public class Login : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Return))
 		{
-			if(p_word != "" && u_name != "")
+			if ( !p_word.Equals("") && !u_name.Equals("") ) 
 			{
-				login();
+				login ();
 			}
 		}
 	}
@@ -46,8 +46,16 @@ public class Login : MonoBehaviour {
 	public void login()
 	{
 		url = "http://localhost:1337/userDetails/" + u_name;
-		WWW www = new WWW(url);
-		StartCoroutine(serverInteract(www));
+
+		if (url.Equals ("http://localhost:1337/userDetails/")) 
+		{
+			Debug.Log ("Not going to log you in");
+		} 
+		else 
+		{
+			WWW www = new WWW (url);
+			StartCoroutine (serverInteract (www));
+		}
 	}
 
 	IEnumerator serverInteract(WWW www)
@@ -57,19 +65,17 @@ public class Login : MonoBehaviour {
 		if(www.error == null)
 		{
 			string json = www.text;
-			Debug.Log(json);
 			p = new Player();
 			p = JsonUtility.FromJson<Player>(json);
 			uC.setTimePlayed(p.timePlayed);
 			uC.setUsername (p.username);
-			Debug.Log(uC.getUsername());
 
 			if(p_word.Equals(p.getPassword() ))
 			{
 				SceneManager.LoadScene("menu_screen");
 			}
 			else{
-				Debug.Log("SCENE ERROR");
+				Debug.Log("Error: Unable to login");
 			}
 		}
 		else

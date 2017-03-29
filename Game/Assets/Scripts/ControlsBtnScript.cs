@@ -6,7 +6,6 @@ public class ControlsBtnScript : MonoBehaviour {
 
 	public void onClick()
 	{
-		Debug.Log("Looking at controls");
 		SceneManager.LoadScene("controls");
 	}
 }

@@ -60,10 +60,6 @@ public class PlayerController : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
-
-
-			Debug.Log(uC.getUsername());
-			Debug.Log("p.saveDetails()");
 			uC.setTimePlayed (uC.getTimePlayed () + Math.Round((timePlayed / 60), 2));
 			p.saveDetails(uC.getUsername(), scoreController.getScore(), uC.getTimePlayed());
 			SceneManager.LoadScene("menu_screen");

@@ -6,7 +6,6 @@ public class BackBtn : MonoBehaviour {
 
 	public void onClick()
 	{
-		Debug.Log("MENU");
 		SceneManager.LoadScene("menu_screen");
 	}
 }

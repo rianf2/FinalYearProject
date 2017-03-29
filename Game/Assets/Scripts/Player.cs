@@ -26,14 +26,11 @@ public class Player
 		this.timePlayed += timePlayed;
 
 		string json = JsonUtility.ToJson(this);
-		Debug.Log(json);
 		byte [] body = Encoding.UTF8.GetBytes(json);
 		Dictionary<string, string> headers = new Dictionary<string, string>();
 		headers.Add("Content-Type", "application/json");
 		headers.Add("X-HTTP-Method-Override", "put");
 		WWW www = new WWW(url, body, headers);
-		Debug.Log("Form sent");
-		Debug.Log(url);
 	}
 
 	public string createURL(string pName)

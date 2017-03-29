@@ -4,11 +4,19 @@ using System.Collections;
 
 public class LogoutBtnScript : MonoBehaviour 
 {
+	private UsernameController usernameController;
+
+	void Start()
+	{
+		usernameController = GameObject.Find ("Username").GetComponent<UsernameController> ();
+	}
+
 	public void onClick()
 	{
-		//saveDetails();
-		Debug.Log("Logging out");
-		Debug.Log("Should make sure details are saved");
+		usernameController.setUsername("");
+		/*
+		 * Have s setPassword method in USernameController to reset it?
+		 */
 		SceneManager.LoadScene("login_screen");
 	}
 }

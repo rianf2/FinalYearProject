@@ -69,7 +69,6 @@ public class Enemy : MonoBehaviour {
 		if (scoreController.getScore () % 100 == 0) 
 		{
 			int selectedValue = Random.Range (0, 3); //the 3 is because 3 factors are being modified, CHANGE
-			Debug.Log("SELECTED VALUE: " + selectedValue);
 
 			const int healthModifier = 50;
 			const float speedModifier = 0.5f;
@@ -79,10 +78,12 @@ public class Enemy : MonoBehaviour {
 			{
 				case 0:
 					es.setSpeed (es.getSpeed() + speedModifier);
+					Debug.Log("Modifying enemy speed");
 				break;
 
 				case 1:
 					this.health = this.health + healthModifier;
+					Debug.Log("Modifying enemy health");
 				break;
 
 			case 2:
@@ -91,6 +92,7 @@ public class Enemy : MonoBehaviour {
 				{
 					this.frequency = 0.85f;
 				}
+				Debug.Log("Modifying enemy frequency");
 			break;
 			}
 		}
