@@ -13,6 +13,23 @@ app.controller("LeaderboardController", ["$scope", "$http", function($scope, $ht
     };
 
     getDetails();
+
+
+    $scope.remove = function(id, email){
+        console.log(id);
+        console.log(email)
+
+        var inputEmail = prompt("Please enter the email address associated with this account to remove it")
+
+        if(inputEmail.toLowerCase() === email)
+        {
+            $http.delete("/userDetails/" + id).success(function(responce){
+                alert("You were successfully removed. Page will now reload.");
+                location.reload();
+            });
+        }
+        else {alert("Error, wrong email inputted. Don't try to delete other peoples accounts"); console.log("STOP");}
+    };
 }]);
 
 app.controller("CreateAccountController", ["$scope", "$http", function ($scope, $http) {

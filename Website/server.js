@@ -162,3 +162,16 @@ function getDate()
     today = days + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
     return today;
 }
+
+/*
+    DELETE: This will delete a user depending on their id
+ */
+app.delete("/userDetails/:id", function(req, res){
+   var id = req.params.id;
+   console.log("Removing user " + id);
+   console.log(req.params);
+
+   usersDB.users.remove({ _id: mongo.ObjectId(id) }, function(err, doc){
+       res.json(doc);
+   });
+});
