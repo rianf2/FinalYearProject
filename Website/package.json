@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "the website/server portion of fyp",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "md5": "^2.2.1",
+    "mongojs": "^2.4.0",
+    "node-gyp": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "final",
+    "year",
+    "project"
+  ],
+  "author": "Rian Fitzgerald",
+  "license": "MIT"
+}

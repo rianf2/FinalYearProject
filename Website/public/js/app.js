@@ -28,7 +28,10 @@ app.controller("LeaderboardController", ["$scope", "$http", function($scope, $ht
                 location.reload();
             });
         }
-        else {alert("Error, wrong email inputted. Don't try to delete other peoples accounts"); console.log("STOP");}
+        else
+        {
+            alert("Error, wrong email inputted. Don't try to delete other peoples accounts");
+        }
     };
 }]);
 
