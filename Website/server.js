@@ -1,17 +1,15 @@
 'use strict'
 
 var express = require("express");
-var app = express();
-const PORT = 1337;
+var port = 1337;
 var path = require("path");
 var mongo = require("mongojs");
 var usersDB = mongo("FYP", ["users"]);
 var bugsDB = mongo("FYP", ["bugs"]);
 var parser = require("body-parser");
-//var bcrypt = require("bcrypt");
-var md5 = require("md5");
 var fs = require("fs");
 
+var app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(parser.json());
 app.use(parser.urlencoded({ extended: true }));
@@ -88,6 +86,19 @@ app.post("/userDetails/:username", function(req, res){
     });
 });
 
+/*
+ DELETE: This will delete a user depending on their id
+ */
+app.delete("/userDetails/:id", function(req, res){
+    var id = req.params.id;
+    console.log("Removing user " + id);
+    console.log(req.params);
+
+    usersDB.users.remove({ _id: mongo.ObjectId(id) }, function(err, doc){
+        res.json(doc);
+    });
+});
+
 app.get('/bugs',function(req,res){
     res.sendFile(path.join(__dirname+'/public/bugs.html'));
 });
@@ -121,29 +132,6 @@ app.post("/bugReports", function(req, res){
     });
 });
 
-
-app.listen(PORT);
-
-console.log();
-console.log("Server running since: " + getDate() + " on port: " + PORT);
-
-/*
-    Encryption: from bcrypt npm page, using async as it allows server
-    to respond to different requests while encrypting details
- */
-function encryptPassword(password)
-{
-    /*const saltRounds = 10;
-    
-    bcrypt.genSalt(saltRounds, function (err, salt) {
-       bcrypt.hash(password, salt, function(err, hash){
-           console.log("ENCRYPTED PASSWORD: " + hash);
-           //this is where the hash should be returned
-           return hash;
-       });
-    });*/
-}
-
 function getDate()
 {
     var today = new Date();
@@ -163,15 +151,7 @@ function getDate()
     return today;
 }
 
-/*
-    DELETE: This will delete a user depending on their id
- */
-app.delete("/userDetails/:id", function(req, res){
-   var id = req.params.id;
-   console.log("Removing user " + id);
-   console.log(req.params);
+app.listen(port);
 
-   usersDB.users.remove({ _id: mongo.ObjectId(id) }, function(err, doc){
-       res.json(doc);
-   });
-});
+console.log();
+console.log("Server running since: " + getDate() + " on port: " + port);
