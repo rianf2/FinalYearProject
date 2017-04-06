@@ -1,5 +1,4 @@
 \documentclass[12pt]{article}
-%NOTE TO SELF: BEFORE SUBMITTING MAKE SURE SLL FONTS ARE CORRECT SIZE
 \usepackage{graphicx}
 %\usepackage{showframe}
 \usepackage[top=1.0in, bottom=1.0in, left=1.5in, right=1.0in]{geometry}
@@ -8,13 +7,26 @@
 \parindent 0ex
 \setlength{\parskip}{1em}
 \begin{document}
-\pagenumbering{roman}
+\pagenumbering{gobble}
 %\maketitle
 \newpage
 \begin{center}
-\section*{Title}
+\section*{}
+	\includegraphics[scale=1]{uni-limerick-crest.png}
+	
+	{\Large Department of Computer Science and Information Systems
+	
+	Title: A modern version of Space Invaders
+	
+	By: Rian Fitzgerald 13121626
+	
+	Course: Computer Games Development LM110
+	
+	Supervisor: Annette McElligott}
+	
 \end{center}
 \newpage
+\pagenumbering{roman}
 \begin{center}
 \section*{Project Summary}
 \end{center}
@@ -30,6 +42,7 @@ This project will use modern tools and techniques as this was a limiting factor 
 \begin{center}
 \section*{Acknowledgments}
 \end{center}
+I would like to acknowledge my family and friends for providing guidance and support for me during my years at college. 
 \newpage
 \begin{center}
 \section*{Declaration}
@@ -146,6 +159,14 @@ Programming in Unity can be achieved by using a number of languages. The most wi
 
 Due to its better support and documentation, C sharp will be the language used to implement the game portion of this project.
 
+
+\begin{center}
+\subsection{Unreal Engine}
+\end{center}
+Another popular choice for developing games is Unreal Engine. It is one of the biggest competitors to Unity. It is also a multiplatform game engine and can export builds for a range of devices such as PC, Mac, Linux, XBOX and Playstation, to name a few. (https://www.unrealengine.com).
+
+As with Unity, Unreal Engine supports many file formats. It also enables developers to accomplish more as the more difficult parts of game programming is abstracted. Programming in Unreal is achieved using two methods. The first is using C++ and utilising the Unreal API. The second method uses blueprints. Blueprints in Unreal are a style of visual coding where the developer drags, drops and connects nodes to get the desired functionality. However these blueprints are not as good performance wise when compared to C++. (https://forums.unrealengine.com.) 
+
 \begin{center}
 \subsection{MongoDB}
 \end{center}
@@ -165,7 +186,7 @@ JSON is built upon two structures:
 	\caption Figure 3.1: Data in JSON format
 \end{center}
 
-Because MongoDB is a NoSQL solution the schema is not enforced as strictly as it would in a relational database. The dynamic schema means that each document can have different key/value pairs and can still be inserted into the database. The table shown below summarises the differences between a Relational Database Management System (for example, mySQL) and MongoDB.
+Because MongoDB is a NoSQL solution the schema is not enforced as strictly as it would in a relational database. The dynamic schema means that each document can have different key/value pairs and can still be inserted into the database. The table shown below summarises the differences between a Relational Database Management System (for example, MySQL) and MongoDB.
 
 \begin{center}
     \begin{tabular}{| l | l |}
@@ -196,6 +217,32 @@ If a document does not specify a unique {\_}id field, MongoDB will generate an O
 \end{center}
 
 \begin{center}
+\subsection{MySQL}
+\end{center}
+MySQL is a free open source Relational Database Management System (RDMS) that uses Structured Query Language (SQL) to perform database operations. Unlike MongoDB, MySQL must follow a schema. A schema is a logical group of tables, procedures and views that relate to one type of object (for example an employee schema). (stackoverflow.com, 2017)
+
+MySQL is also fully ACID compliant. ACID stands for: 
+\begin{itemize}
+	\item Atomic: an update to a document with fully completes or doesn't
+	\item Consistent: no parital update will be read
+	\item Isolated: no dirty update will be read
+	\item Durable: 
+\end{itemize}
+
+MongoDB is not as ACID compliant as MySQL. It is compliant at the document level. What MongoDB lacks is transactions. This is the ability to revert any updates to multiple documents. (stackoverflow.com, 2017).
+
+Unlike MongoDB, when using MySQL the developer must decide on a primary key to use. This can be any value the developer chooses but a good practice is to use a type of user identifier that is automatically incremented when a new user is entered. The syntax for this statement might look like the following: 
+
+\begin{verbatim}
+CREATE TABLE IF NOT EXISTS Users(
+	userID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY(userID)
+);
+\end{verbatim}
+
+\end{list}   
+
+\begin{center}
 \subsection{ExpressJS}
 \end{center}
 ExpressJS is a flexible JavaScript web application framework which uses NodeJS to create features for web and mobile applications (expressjs.com, 2017).
@@ -212,11 +259,29 @@ AngularJS is used to develop the frontend elements of a system. Angular uses the
 \begin{center}
 \subsection{NodeJS}
 \end{center}
-The final element to the backend of the project is a NodeJS server. It is not a JavaScript framework but many of the modules it uses are written in JavaScript. It is built upon Google Cromes V8 JavaScript engine. NodeJS uses an event driven, non-blocking I/O model the makes it lightweight and efficient (nodejs.org/en/, 2017).
+NodeJS is a server side solution for JavaScript. It is comparable to an Apache webserver for PHP. It is not a JavaScript framework but many of the modules it uses are written in JavaScript. It is built upon Google Cromes V8 JavaScript engine. NodeJS uses an event driven, non-blocking I/O model the makes it lightweight and efficient (nodejs.org/en/, 2017).
 
 A non-blocking I/O (also known as an asynchronous I/O) means that an I/O request will be queued straight away and the function returns. The I/O is processed at a later point. A blocking I/O thread cannot process anything else until the I/O is complete. In the case of sockets, this could result in a long waiting time. NodeJS uses only uses one thread to service all requests. (stackoverflow.com/, 2017)
 
 The advantage of using NodeJS is that it has its own package manager, similar to Ubuntu, called Node Package Manager (npm for short). This allows developers to share libraries of code as well as managing versions of the code. This is how the ExpressJS framework will be integrated into the project.
+
+\begin{center}
+	\subsection{Apache Server}
+\end{center}
+The Apache web server is a software product which aims to create a feature rich, robust, commercial grade, open source HTTP server. (httpd.apache.org, 2017). 
+
+The features which Apache supports are implemented in compiled modules which can range from server programming to authentication schemes. It is often used with MySQL and PHP to crate web applications.
+
+Apache allows developers to control access to different web pages by using different modules that are provided, however it does not give as much control as a NodeJS server. Apache does allow developers to create their own modules however it is not as simple as using NodeJS.
+
+\begin{center}
+	\subsection{Research Conclusions}
+\end{center}
+From the research completed of the existing games, it is clear that many existing implementations don't address the fact that the difficulty stays the same for the game. The original Space Invaders did have a feature where the enemies would get faster the less there were, however this was a bug that the developer made a mechanic out of. Some solutions to address this problem include creating a template that uses the existing players data to instantiate a level based on this data. Another solution would be to change properties of the enemy as the game goes on. 
+
+The Unity game engine will be used to implement the functionality of the game . This decision is based on some of the pitfalls of Unreal engine. Although Unreal engine is a more commonly used solution, it didn't suit this project. This is because the blueprints technology used is too simplified and C++ can be over complicated. Unity is a happy medium between these as it uses the C{\#} language for functionality. This also gives the advantage of accessing the .NET framework if necessary. 
+
+For the web application portion of this project, MongoDB, ExpressJS, AngularJS and NodeJS technologies will be used. This decision was based on a number of factors. Firstly is previous experience using these technologies. Secondly is the fact that all these technologies are JavaScript based and MongoDB uses JSON which enables data to be easily passed to and from the server. This is in contrast to using Apache, MySQL and PHP which use different technologies that allow the same functionality. The final factor influencing this decision is that JavaScript technologies are becoming more popular and further experience using these would be beneficial in a future career. 
 
 \newpage
 \begin{center}
@@ -258,6 +323,8 @@ The design portion of this report will deal with the various thought processes b
 Angularjs.org (2017) \textit{ngController} [online], available: https://docs.angularjs.org/api/
 \hangindent=0.5in ng/directive/ngController [accessed 1 January 2017]
 
+Apache (2017) \textit{What is the Apache HTTP Server Project?} [online], available: https://httpd.apache.org/ABOUT_APACHE.html#What [accessed 6 April 2017]
+
 Atari 2600 Specifications (2016) \textit{Technical Data} [online], available: http://problemka
 \hangindent=0.5in putt.de/2k6specs.htm [accessed 29 December 2016]
 
@@ -288,9 +355,13 @@ MongoDB (2017) \textit{BSON Types} [online], available: https://docs.mongodb.com
 NodeJS (2017) \texit{Home} [online], available: https://nodejs.org/en/ [accessed 2 January 
 \hangindent=0.5in 2017]
 
+Stack Overflow (2009) \textit{What good are SQL Server schemas?}, [online] available: http://stackoverflow.com/questions/529142/what-good-are-sql-server-schemas [accessed 5 April 2017]
+
 Stack Overflow (2017) \textit{MongoDB} [online], available:
 http://stackoverflow.com/questio
 \hangindent=0.5in ns/tagged/mongodb [accessed 1 January 2017]
+
+Stack Overflow (2011) \textit{What does MongoDB not being ACID compliant really mean?} [online], available: http://stackoverflow.com/questions/7149890/what-does-mongodb-not-being-acid-compliant-really-mean [accessed 5 April 2017]
 
 Stack Overflow (2013) \textit{What is non-blocking or asynchronous I/O in Node.js?} [on
 \hangindent=0.5in line], available: http://stackoverflow.com/questions/10570246/what-is-non-bl 
@@ -312,9 +383,13 @@ Unity (2009) \textit{How should I decide if I should use C#, JavaScript (UnitySc
 \hangindent=0.5in 28/how-should-i-decide-if-i-should-use-c-javascript-u.html [accessed 30 December 2016]
 
 Unity (2015) \textit{Will Boo ever come back?} [online], available:
-https://forum.unity3d.co
+https://forum.unity3d.com
 \hangindent=0.5in m/threads/will-boo-ever-come-back.375988/ [accessed 30
 December 2016]
+
+Unreal (2014) \textit{[Twitch] Fortnite Developers Discussion - Apr. 17, 2014} [online], \hangindent=0.5in available: https://forums.unrealengine.com/showthread.php?3035-New-Twitch-\hangindent=0.5in -with-Fortnite-developers-Thursday-April-17&p=19464&viewfull=1#post19464 [accessed 05 April 2017]
+
+Unreal (2017) \textit{What is Unreal Engine 4} [online], available: https://www.unrealengine.com\hangindent=0.5in /what-is-unreal-engine-4 [accessed 5 April 2017]
 
 \newpage
 \begin{center}
