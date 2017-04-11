@@ -16,6 +16,7 @@
 	
 	{\Large Department of Computer Science and Information Systems
 	
+	\vspace{5em}
 	Title: A modern version of Space Invaders
 	
 	By: Rian Fitzgerald 13121626
@@ -47,6 +48,11 @@ I would like to acknowledge my family and friends for providing guidance and sup
 \begin{center}
 \section*{Declaration}
 \end{center}
+This final year project is presented in partial fulfilment of the requirement for the Bachelor of Science in Computer Games Development. I herewith declare that I have produced this report without prohibited assistance of third parties and without making use of aids others than those specified. Where use has been made of the work of other people if has been fully acknowledged and referenced appropiately. 
+
+Signature: \underline{\hspace{3cm}}
+
+Date: \underline{\hspace{3.855cm}}
 \newpage
 
 \begin{center}
@@ -62,14 +68,11 @@ I would like to acknowledge my family and friends for providing guidance and sup
 \section{Introduction}
 \end{center}
 
-\begin{center}
-\subsection{General Introduction} 
-\end{center}
+
+{\centering \subsection{General Introduction}}
 This chapter will give a brief description of the chapters that follow. Chapter two  discusses that background and research that went into this project. Chapter three will show case some of the design that went into this project. Chapter four will address some of the implementation and issues encountered. Chapter five will showcase the testing and evaluation used in the project. The final chapter discusses the conclusions and possible further development of this project.
 
-\begin{center}
-\subsection{Motivating Factors}
-\end{center}
+{\centering \subsection{Motivating Factors}}
 The main motivation for undertaking this project was to improve the Space Invaders game. From the research completed (this is discussed in Chapter 3), many clones have a set difficulty. This results in an imbalance in the difficulty. A highly skilled player will be able to get a higher score quite easily. The result of this project has created a game that uses information collected by the player to make it more difficult for them to beat. 
 
 A secondary motivation to complete this project was to become familiar with using a modern game engine. It would be a useful skill to add to my repertoire, especially if I want to apply for a job in a game company after college. 
@@ -78,9 +81,7 @@ Another motivation for doing this project is to increase my knowledge in web bas
 
 The final motivation for completing this project is to combine the knowledge I have learned from various modules. This project incorporates aspects of Programming, Object Orientated Programming, Database Systems, Distributed Systems and Systems Analysis and Design. Principles learned from these modules will be applied in the project
 
-\begin{center}
-\subsection{Objectives of Proposed Work}
-\end{center}
+{\centering \subsection{Objectives of Proposed Work}}
 This project has two main objectives with multiple elements to be completed. The two primary objectives are the game and the website. 
 
 The following list details the objectives to be completed for the game.
@@ -110,9 +111,7 @@ various parts of the project.
 \end{center}
 The background and research section discusses the previous implementations of Space Invaders and the considerations that the original designer had to consider. It will also analyse the technologies that will power this project. 
 
-\begin{center}
-\subsection{Analysis of Existing Products}
-\end{center}
+{\centering \subsection{Analysis of Existing Products}}
 The original Space Invaders was very primitive in its implementation. It was so primitive that it was unable to render many colours and had to rely on a colour overlay. (arcade-museum.com, 2016). The specification for some of the system is given below
 
 
@@ -159,17 +158,12 @@ Programming in Unity can be achieved by using a number of languages. The most wi
 
 Due to its better support and documentation, C sharp will be the language used to implement the game portion of this project.
 
-
-\begin{center}
-\subsection{Unreal Engine}
-\end{center}
+{\centering \subsection{Unreal Engine}}
 Another popular choice for developing games is Unreal Engine. It is one of the biggest competitors to Unity. It is also a multiplatform game engine and can export builds for a range of devices such as PC, Mac, Linux, XBOX and Playstation, to name a few. (https://www.unrealengine.com).
 
 As with Unity, Unreal Engine supports many file formats. It also enables developers to accomplish more as the more difficult parts of game programming is abstracted. Programming in Unreal is achieved using two methods. The first is using C++ and utilising the Unreal API. The second method uses blueprints. Blueprints in Unreal are a style of visual coding where the developer drags, drops and connects nodes to get the desired functionality. However these blueprints are not as good performance wise when compared to C++. (https://forums.unrealengine.com.) 
 
-\begin{center}
-\subsection{MongoDB}
-\end{center}
+{\centering \subsection{MongoDB}}
 MongoDB is a high performance, scalable, document orientated NoSQL database solution. (stackoverflow.com, 2017). MongoDB uses a JSON-like document with schemas. JSON is a lightweight data format that is easy for humans to read and write as well as to parse for machines. Figure 3.1 shows an example of some data in the JSON format.
 
 JSON is built upon two structures: 
@@ -182,8 +176,8 @@ JSON is built upon two structures:
 
 \begin{center}
 	\includegraphics[scale=1]{json_no_id.PNG}
-	
-	\caption Figure 3.1: Data in JSON format
+
+	Figure 3.1: Data in JSON format
 \end{center}
 
 Because MongoDB is a NoSQL solution the schema is not enforced as strictly as it would in a relational database. The dynamic schema means that each document can have different key/value pairs and can still be inserted into the database. The table shown below summarises the differences between a Relational Database Management System (for example, MySQL) and MongoDB.
@@ -213,7 +207,7 @@ If a document does not specify a unique {\_}id field, MongoDB will generate an O
 \begin{center}
 	\includegraphics[scale=1]{json_id.PNG}
 	
-	\caption Figure 3.2: Data including the 12 byte hexadecimal {\_}id field. In this example the {\_}id was automatically generated from MongoDB. 
+	Figure 3.2: Data including the 12 byte hexadecimal {\_}id field. In this example the {\_}id was automatically generated from MongoDB. 
 \end{center}
 
 \begin{center}
@@ -223,10 +217,10 @@ MySQL is a free open source Relational Database Management System (RDMS) that us
 
 MySQL is also fully ACID compliant. ACID stands for: 
 \begin{itemize}
-	\item Atomic: an update to a document with fully completes or doesn't
-	\item Consistent: no parital update will be read
-	\item Isolated: no dirty update will be read
-	\item Durable: 
+	\item Atomic: a transaction that is either fully completed with all od its data modifications or not at all.
+	\item Consistent: when the transaction is finished all data must be in a consistent state.
+	\item Isolated: modifications to the  data performed by a transaction must be independent of a different transaction.
+	\item Durable: when the transaction is completed, effects of the modifications performed by the transaction must be permanent.
 \end{itemize}
 
 MongoDB is not as ACID compliant as MySQL. It is compliant at the document level. What MongoDB lacks is transactions. This is the ability to revert any updates to multiple documents. (stackoverflow.com, 2017).
@@ -238,9 +232,7 @@ CREATE TABLE IF NOT EXISTS Users(
 	userID INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	PRIMARY KEY(userID)
 );
-\end{verbatim}
-
-\end{list}   
+\end{verbatim}   
 
 \begin{center}
 \subsection{ExpressJS}
@@ -249,34 +241,26 @@ ExpressJS is a flexible JavaScript web application framework which uses NodeJS t
 
 It is minimal and provides tools to build applications, with many more plugins available via the Node Package Manager (npm). ExpressJS is similar to Rails for Ruby and Django for Python. Unlike Ruby on Rails or Django there is no documented best way to use the ExpressJS framework. Because it is written in JavaScript and uses NodeJS, express is able to interact with MongoDB in order to retrieve, insert, update and remove documents from a database.
 
-\begin{center}
-\subsection{AngularJS}
-\end{center}
+{\centering \subsection{AngularJS}}
 AngularJS is a client-side JavaScript framework that is developed by Google. HTML is useful for declaring static views but fails when trying to declare a dynamic view. Other frameworks deal with this issue by abstracting technologies to manipulate the Document Object Model (DOM). These solutions don’t address the root problem which is HTML (angularjs.org/, 2017). AngularJS addresses this issue by extending HTML which is achieved by using directives and binds data to HTML using expressions.
 
 AngularJS is used to develop the frontend elements of a system. Angular uses the Model View Controller (MVC) pattern in order to separate the representations of the data from how it is displayed to the user. Because it is JavaScript based, AngularJS is able to communicate with the other chosen technologies easily.
 
-\begin{center}
-\subsection{NodeJS}
-\end{center}
+{\centering \subsection{NodeJS}}
 NodeJS is a server side solution for JavaScript. It is comparable to an Apache webserver for PHP. It is not a JavaScript framework but many of the modules it uses are written in JavaScript. It is built upon Google Cromes V8 JavaScript engine. NodeJS uses an event driven, non-blocking I/O model the makes it lightweight and efficient (nodejs.org/en/, 2017).
 
 A non-blocking I/O (also known as an asynchronous I/O) means that an I/O request will be queued straight away and the function returns. The I/O is processed at a later point. A blocking I/O thread cannot process anything else until the I/O is complete. In the case of sockets, this could result in a long waiting time. NodeJS uses only uses one thread to service all requests. (stackoverflow.com/, 2017)
 
 The advantage of using NodeJS is that it has its own package manager, similar to Ubuntu, called Node Package Manager (npm for short). This allows developers to share libraries of code as well as managing versions of the code. This is how the ExpressJS framework will be integrated into the project.
 
-\begin{center}
-	\subsection{Apache Server}
-\end{center}
+{\centering \subsection{Apache Server}}
 The Apache web server is a software product which aims to create a feature rich, robust, commercial grade, open source HTTP server. (httpd.apache.org, 2017). 
 
 The features which Apache supports are implemented in compiled modules which can range from server programming to authentication schemes. It is often used with MySQL and PHP to crate web applications.
 
 Apache allows developers to control access to different web pages by using different modules that are provided, however it does not give as much control as a NodeJS server. Apache does allow developers to create their own modules however it is not as simple as using NodeJS.
 
-\begin{center}
-	\subsection{Research Conclusions}
-\end{center}
+{\centering \subsection{Research Conclusions}}
 From the research completed of the existing games, it is clear that many existing implementations don't address the fact that the difficulty stays the same for the game. The original Space Invaders did have a feature where the enemies would get faster the less there were, however this was a bug that the developer made a mechanic out of. Some solutions to address this problem include creating a template that uses the existing players data to instantiate a level based on this data. Another solution would be to change properties of the enemy as the game goes on. 
 
 The Unity game engine will be used to implement the functionality of the game . This decision is based on some of the pitfalls of Unreal engine. Although Unreal engine is a more commonly used solution, it didn't suit this project. This is because the blueprints technology used is too simplified and C++ can be over complicated. Unity is a happy medium between these as it uses the C{\#} language for functionality. This also gives the advantage of accessing the .NET framework if necessary. 
@@ -289,49 +273,120 @@ For the web application portion of this project, MongoDB, ExpressJS, AngularJS a
 \end{center}
 The design portion of this report will deal with the various thought processes behind the design of the many parts in this project. 
 
-\begin{center}
-\subsection{Game Design}
-\end{center}
+{\centering \subsection{Game Design}}
+Game design is the name given to the various parts of a game. These can include story and plot development, mechanics and aesthetics where applicable. As this game is an arcade game with no story, the design of the game will focus on the mechanics primarily and aesthetics secondly. 
 
-\begin{center}
-\subsection{Database Design}
-\end{center}
+Questions that have to be asked in this section include the following:
 
-\begin{center}
-\subsection{Website Design}
-\end{center}
+\begin{itemize}
+\item How does a player play the game?
+\item What are the rules of the game?
+\item How does the player increase their score?
+\item How does the difficulty change as the game is played?
+\item What makes the game challenging to the player?
+\end{itemize}
+Each of these questions will be answered in this section. By the end an in depth knowledge of how the game performs should be acquired. 
 
+{\centering \subsubsection{How does the player play the game?}}
+This project is being developed for the PC platform. Other platforms such as mobile (Android and iOS) were considered but presented some challenges for the outcome. Since a PC is being used, the player will have access to the input hardware that connects to that PC. In layman terms this means the keyboard and mouse. For the purposes of this project, the is only used to click buttons. The player player movements are done through the keyboard. 
+
+Before playing that game, the player must create an account on the website. When this is created the player can log into the game and read instructions or begin to play the game. The players spaceship moves left and right by pressing the left arrow key or right arrow key respectively. The A and D keys also provide this functionality for players who prefer using those keys. In order to shoot a laser, the player presses the Space key. While playing the game, the player can press the Escape key to end the round prematurely if it is required. This will log whatever their recent score is to the database. When the players health becomes 0, the game will log whatever score is accumulated to the database and return to the menu screen.
+
+{\centering \subsubsection{What are the rules of the game?}}
+The rules of this game will follow most of the rules of the original Space Invaders. The player can move left and right until they reach the edge of the screen. From there they will no longer be able to move in the direction they were. When they want to, the player can shoot a laser at the enemy spaceship. These are the only rules that are applicable to this project. Aside from this, players may have their own rules (also known as home brew. For example, players could choose the have a challenge where they can not have a continuous stream of lasers shooting).
+
+One rule that was used in this project is the players most recent score will be logged. This means that many different players can be on top of the leader board. THIS NEEDS BETTER ENGLISH!!!!!!
+
+{\centering \subsubsection{How does the player increase their score?}}
+The player increases their score by successfully shooting and eliminating an enemy spaceship. This will give the player a score increase of 10 points. This differs from the original implementation of Space Invaders where different enemies will give different values depending on their location. Low invaders will give 10 points, middle invaders will give 20 points and upper invaders will score 30 points. There is also a mystery ship that scores between 50 and 300 points.
+
+{\centering \subsubsection{How does the difficulty change as the game is played?}} 
+The game begins easy as all the values to be modified are at their default value. For every 100 points the player scores, one of these values will be randomly chosen and modified and changed. Because it is randomly chosen, the player won't know what values will be modified until it happens. See the appendix for a code snippet.
+
+Another way that the difficulty changes as the game increases is that the players health never goes up as the game is played. This is in contrast to the original game where for every 1500 points the player scored, they would gain an extra life. This implementation does away with that mechanic as having a set health provides a survival challenge to the player. 
+
+{\centering \subsubsection{What makes the game challenging to the player?}}
+The challenge of this game is achieved by having the enemies randomly increase a value as the player scores more points. As the game progresses, they will become harder and harder to beat. 
+
+The other challenging part is the fact that only their most recent score will be saved. For example, if on one play through the player scored 1000 points, it would be saved. If the same player played again and managed to score 0 points, the 1000 points would be overwritten and saved with 0 points.  
+
+{\centering \subsection{Database Design}}
+When discussing database design for a Relational Database Management System (RDBMS) there are many different methods to decide what type of data should be stored in a table and how to determine their properties. Such techniques include finding properties such as: 
+
+\begin{itemize}
+\item Super keys
+\item Candidate keys
+\item Primary keys
+\item Functionality dependencies
+\item Closures
+\end{itemize}
+
+With a NoSQL solution such as MongoDB, the same method is not as easily. Because of this, decisions had to be made about what types of data should be included. As previously discussed, MongoDB will handle creating unique primary keys which makes the task easier. Because this project has accounts user names and passwords are required. The possibility that two people will have the same user name is much less than the possibility that they have the same name. 
+
+At minimum, the database should contain user names and passwords. However, this is not enough information about the user. If something was to go wrong with the account or if the user wanted to delete their account, an email address would be needed. Although this could be achieved with a user name, the user name is public data which could result in other users deleting accounts which they do not own. 
+
+At minimum, that is the data the must be stored in the database. The next two data fields are used to collect data about how the player plays the game. As such, it is not as critical as the other data fields. Now a schema can be created for this data. As previouly talked about, NoSQL does not strictly enforce this schema so other fields can be added to this. For the purposes of this project however, the schema will be enforced. This is achieved by not allowing the user to input any extra data than is needed. An example of what a document containing user data looks like is given below.
+
+\begin{verbatim}
+{
+    "_id" : ObjectId("58d106c002b9ed13e0dc37e3"),
+    "email" : "johndoe@gmail.com",
+    "username" : "JohnDoe",
+    "password" : "mynameisjohndoe",
+    "score" : 420,
+    "timePlayed" : 4.2
+}
+\end{verbatim} 
+
+{\centering \subsection{Website Design}}
+The user interface of this website is as minimal as possible. This was decided upon for a number of reasons.
+ 
+\begin{enumerate}
+\item It will reduce confusion for new users about where to navigate to.
+\item Because it will only display some user data and allow account creation, users may opt to use mobile devices to use this website. If there was too much to display, this would increase loading times for users and result in a negative experience. 
+\item Companies such as Apple strive for minimal design as it is pleasing to the user and reduces development time for different features. (developer.apple.com, 2017)
+\end{enumerate}
+
+To achieve this minimal design, the leaderboard should always be displayed as that is the primary use of this website. The data should be displayed in a tabular format which will be pleasing to the user. The only data that will be displayed is the users user name, their current score and the total time they have played. 
+
+The second function of this website is to allow account creation. Because it is secondary, it should only be displayed if the user requests it. This means that there should be a button or text the user clicks to show a form of some sort. Within this form, there should be three text fields to input the some data (an email address, a user name and a password). To submit this data there should be a button which submits it. To appeal to the user, the content should be centered where possible.
+
+To address the mobile issue, some Cascading Style Sheets (CSS) will be used. A framework that puts mobile content first is bootstrap, which will be used in this project.  (getbootstrap.com/css, 2017)
+
+\newpage
 \begin{center}
 \section{Implementation}
 \end{center}
 
-\begin{center}
-\section{Testing and Evaluation}
-\end{center}
+\newpage
+{\centering \section{Testing and Evaluation}}
 
-\begin{center}
-\section{Conclusions and Further Development}
-\end{center}
+\newpage
+{\centering \section{Conclusions and Further Development}}
 
-\begin{center}
-\section{Appendicies}
-\end{center}
+\newpage
+{\centering \section{Appendicies}}
 
-\begin{center}
-\section{References}
-\end{center}
+\newpage
+{\centering \section{References}}
 Angularjs.org (2017) \textit{ngController} [online], available: https://docs.angularjs.org/api/
 \hangindent=0.5in ng/directive/ngController [accessed 1 January 2017]
 
-Apache (2017) \textit{What is the Apache HTTP Server Project?} [online], available: https://httpd.apache.org/ABOUT_APACHE.html#What [accessed 6 April 2017]
+Apache (2017) \textit{What is the Apache HTTP Server Project?} [online], available: https://
+\hangindent=0.5in httpd.apache.org/ABOUT{\_}APACHE.html{\#}What [accessed 6 April 2017]
 
 Atari 2600 Specifications (2016) \textit{Technical Data} [online], available: http://problemka
 \hangindent=0.5in putt.de/2k6specs.htm [accessed 29 December 2016]
 
+Apple (2017) \textit{iOS Human Interface Guidelines} [online], available: https://developer.ap
+\hangindent=0.5in ple.com/ios/human-interface-guidelines/visual-design/layout/ [accessed 11 April 2017]
+
 Bandai Namco \textit{Space Invaders Evolution} [online], available:
 https://www.bandainamc
-\hangindent=0.5inoent.eu/product/space-invaders-evolution/psp [accessed
+\hangindent=0.5 inoent.eu/product/space-invaders-evolution/psp [accessed
 4 January 2017]
+
+Bootstrap \textit{Overview} [online], available: http://getbootstrap.com/css/ [accessed 11\hangindent=0.5in April 2017]
 
 Express (2017) \textit{Web Application} [online], available: http://expressjs.com/ [accessed 
 \hangindent=0.5in 1 January 2017]
@@ -350,12 +405,14 @@ Kotaku (2016) \textit{Space Invaders Infinity Gene Micro-Review: Evolve or Die} 
 \hangindent=0.5in iew-evolve-or-die [accessed 30 December 2016]
 
 MongoDB (2017) \textit{BSON Types} [online], available: https://docs.mongodb.com/manua
-\hangindent=0.5in l/reference/bson-types/#objectid [accessed 1 January 2017]
+\hangindent=0.5in l/reference/bson-types/{\#}objectid [accessed 1 January 2017]
 
-NodeJS (2017) \texit{Home} [online], available: https://nodejs.org/en/ [accessed 2 January 
+NodeJS (2017) \textit{Home} [online], available: https://nodejs.org/en/ [accessed 2 January 
 \hangindent=0.5in 2017]
 
-Stack Overflow (2009) \textit{What good are SQL Server schemas?}, [online] available: http://stackoverflow.com/questions/529142/what-good-are-sql-server-schemas [accessed 5 April 2017]
+Stack Overflow (2009) \textit{What good are SQL Server schemas?}, [online] available: http://
+\hangindent=0.5in stackoverflow.com/questions/529142/what-good-are-sql-server-schemas [acces
+\hangindent=0.5in sed 5 April 2017]
 
 Stack Overflow (2017) \textit{MongoDB} [online], available:
 http://stackoverflow.com/questio
@@ -378,7 +435,7 @@ http://www.theisozone.com/
 Unity (2016) \textit{Build once, deploy anywhere} [online], available: https://unity3d.com/un
 \hangindent=0.5in ity/multiplatform [accessed 30 December 2016]
 
-Unity (2009) \textit{How should I decide if I should use C#, JavaScript (UnityScript) or 
+Unity (2009) \textit{How should I decide if I should use C{\#}, JavaScript (UnityScript) or 
 \hangindent=0.5in Boo for my project?} [online], available: http://answers.unity3d.com/questions/75
 \hangindent=0.5in 28/how-should-i-decide-if-i-should-use-c-javascript-u.html [accessed 30 December 2016]
 
@@ -387,9 +444,10 @@ https://forum.unity3d.com
 \hangindent=0.5in m/threads/will-boo-ever-come-back.375988/ [accessed 30
 December 2016]
 
-Unreal (2014) \textit{[Twitch] Fortnite Developers Discussion - Apr. 17, 2014} [online], \hangindent=0.5in available: https://forums.unrealengine.com/showthread.php?3035-New-Twitch-\hangindent=0.5in -with-Fortnite-developers-Thursday-April-17&p=19464&viewfull=1#post19464 [accessed 05 April 2017]
+Unreal (2014) \textit{[Twitch] Fortnite Developers Discussion - Apr. 17, 2014} [online], \hangindent=0.5in available: https://forums.unrealengine.com/showthread.php?3035-New-Twitch-\hangindent=0.5in -with-Fortnite-developers-Thursday-April-17{\&}p=19464{\&}viewfull=1{\#}post19464 [accessed 05 April 2017]
 
-Unreal (2017) \textit{What is Unreal Engine 4} [online], available: https://www.unrealengine.com\hangindent=0.5in /what-is-unreal-engine-4 [accessed 5 April 2017]
+Unreal (2017) \textit{What is Unreal Engine 4} [online], available: https://www.unrealengine.c
+\hangindent=0.5in om/what-is-unreal-engine-4 [accessed 5 April 2017]
 
 \newpage
 \begin{center}

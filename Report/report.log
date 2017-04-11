@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  6 APR 2017 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  11 APR 2017 13:38
 entering extended mode
 **./report.tex
 (report.tex
@@ -215,550 +215,296 @@ Package pdftex.def Info: uni-limerick-crest.png used on input line 15.
  [1
 
 {C:/Users/Rian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./uni-limeri
-ck-crest.png (PNG copy)>] [1] [2] [3]
-(report.toc
+ck-crest.png (PNG copy)>] [1] [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
- [4])
+(Font)              <6> on input line 53.
+ [3]
+(report.toc [4])
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
- [5]
+ [5] [1] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 \end{center}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.83 \end{center}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1] [2]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
 
 ("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \OT1/cmr/m/n/12 vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []\OT1/cmr/m/n/12 Arcade,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \OT1/cmr/m/n/12 Atari 2600,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \OT1/cmr/m/n/12 ter-tain-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 136--136
+Underfull \hbox (badness 1701) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 vaders Part
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 II, Space
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 Deluxe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []\OT1/cmr/m/n/12 Arcade,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []\OT1/cmr/m/n/12 Gameboy ver-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 al-lowed mul-ti-player,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/12 USA ver-sion had
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/cmr/m/n/12 vaders X
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 []\OT1/cmr/m/n/12 Playstation,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/cmr/m/n/12 64, Game
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 Evo-lu-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 vaders:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/12 Playstation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/12 Updated graph-ics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 sounds and game-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/12 play, mul-ti-player
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 \OT1/cmr/m/n/12 vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 \OT1/cmr/m/n/12 Playsta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 \OT1/cmr/m/n/12 Portable,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/cmr/m/n/12 Space In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 \OT1/cmr/m/n/12 vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 \OT1/cmr/m/n/12 In-fin-ity
  []
 
-[3] [4]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5] <json_no_id.PNG, id=41, 201.75375pt x 76.03406pt>
+[3] [4] [5] <json_no_id.PNG, id=41, 201.75375pt x 76.03406pt>
 File: json_no_id.PNG Graphic file (type png)
- <use json_no_id.PNG>
-Package pdftex.def Info: json_no_id.PNG used on input line 184.
+
+<use json_no_id.PNG>
+Package pdftex.def Info: json_no_id.PNG used on input line 178.
 (pdftex.def)             Requested size: 201.75325pt x 76.03386pt.
-
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.186 	\caption
-                Figure 3.1: Data in JSON format
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[6 <./json_no_id.PNG>] <json_id.PNG, id=47, 250.68657pt x 86.57344pt>
+ [6 <./json_no_id.PNG>]
+<json_id.PNG, id=47, 250.68657pt x 86.57344pt>
 File: json_id.PNG Graphic file (type png)
-
-<use json_id.PNG>
-Package pdftex.def Info: json_id.PNG used on input line 214.
+ <use json_id.PNG>
+Package pdftex.def Info: json_id.PNG used on input line 208.
 (pdftex.def)             Requested size: 250.68594pt x 86.57321pt.
-
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216 	\caption
-                Figure 3.2: Data including the 12 byte hexadecimal {\_}id fi...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[7 <./json_id.PNG>]
-
-! LaTeX Error: \begin{document} ended by \end{list}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243 \end{list}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.243 \end{list}
-                
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ [7 <./json_id.PNG>]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-[8]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9] [10]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.302 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 \end{center}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.326 ...vailable: https://httpd.apache.org/ABOUT_
-                                                  APACHE.html#What [accessed...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! You can't use `macro parameter character #' in math mode.
-l.326 ...tps://httpd.apache.org/ABOUT_APACHE.html#
-                                                  What [accessed 6 April 2017]
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.327 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (356.5925pt too wide) in paragraph at lines 326--327
-[]\OT1/cmr/m/n/12 Apache (2017) \OT1/cmr/m/it/12 What is the Apache HTTP Server
- Project? \OT1/cmr/m/n/12 [on-line], avail-able: https://httpd.apache.org/ABOUT
-$[]\OML/cmm/m/it/12 PACHE:htmlWhat\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 accessed\OT
-1/cmr/m/n/12 6\OML/cmm/m/it/12 April\OT1/cmr/m/n/12 2017]$ 
+ [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
+Overfull \hbox (3.94841pt too wide) in paragraph at lines 381--383
+[]\OT1/cmr/m/n/12 Apple (2017) \OT1/cmr/m/it/12 iOS Hu-man In-ter-face Guide-li
+nes \OT1/cmr/m/n/12 [on-line], avail-able: https://developer.ap
  []
 
 
-Overfull \hbox (1.52383pt too wide) in paragraph at lines 331--335
+Overfull \hbox (10.88435pt too wide) in paragraph at lines 381--383
+\OT1/cmr/m/n/12 ple.com/ios/human-interface-guidelines/visual-design/layout/ [a
+c-cessed 11 April
+ []
+
+
+Overfull \hbox (1.52383pt too wide) in paragraph at lines 384--388
 []\OT1/cmr/m/n/12 Bandai Namco \OT1/cmr/m/it/12 Space In-vaders Evo-lu-tion \OT
 1/cmr/m/n/12 [on-line], avail-able: https://www.bandainamc
  []
 
 
-Overfull \hbox (0.83585pt too wide) in paragraph at lines 339--342
+Overfull \hbox (8.4pt too wide) in paragraph at lines 389--390
+[]\OT1/cmr/m/n/12 Bootstrap \OT1/cmr/m/it/12 Overview \OT1/cmr/m/n/12 [on-line]
+, avail-able: http://getbootstrap.com/css/ [ac-cessed 11April
+ []
+
+
+Overfull \hbox (0.83585pt too wide) in paragraph at lines 394--397
 \OT1/cmr/m/n/12 org/web/20080408152913/http://archive.gamespy.com/legacy/hallof
 fame/spa
  []
 
-[11]
-Overfull \hbox (8.46124pt too wide) in paragraph at lines 343--345
+
+Overfull \hbox (8.46124pt too wide) in paragraph at lines 398--400
 []\OT1/cmr/m/n/12 IGN (2008) \OT1/cmr/m/it/12 Space In-vaders Ex-treme \OT1/cmr
 /m/n/12 [on-line], avail-able: http://ie.ign.com/games/space-
  []
 
-! You can't use `macro parameter character #' in horizontal mode.
-l.353 \hangindent=0.5in l/reference/bson-types/#
-                                                objectid [accessed 1 January...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Undefined control sequence.
-l.355 NodeJS (2017) \texit
-                          {Home} [online], available: https://nodejs.org/en/...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (221.0659pt too wide) in paragraph at lines 358--359
-[]\OT1/cmr/m/n/12 Stack Over-flow (2009) \OT1/cmr/m/it/12 What good are SQL Ser
-ver schemas?\OT1/cmr/m/n/12 , [on-line] avail-able: http://stackoverflow.com/qu
-estions/529142/what-
- []
-
-
-Overfull \hbox (2.17662pt too wide) in paragraph at lines 360--363
+[19]
+Overfull \hbox (2.17662pt too wide) in paragraph at lines 417--420
 []\OT1/cmr/m/n/12 Stack Over-flow (2017) \OT1/cmr/m/it/12 Mon-goDB \OT1/cmr/m/n
 /12 [on-line], avail-able: http://stackoverflow.com/questio
  []
 
 
-Overfull \hbox (3.93239pt too wide) in paragraph at lines 364--365
+Overfull \hbox (3.93239pt too wide) in paragraph at lines 421--422
 \OT1/cmr/m/n/12 [on-line], avail-able: http://stackoverflow.com/questions/71498
 90/what-does-mongodb-
  []
 
-! Illegal parameter number in definition of \reserved@a.
-<to be read again> 
-                   ,
-l.382 \hangindent=0.5in Boo for my project?}
-                                             [online], available: http://ans...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
 
-! You can't use `macro parameter character #' in horizontal mode.
-<argument> How should I decide if I should use C##
-                                                  , JavaScript (UnityScript)...
-l.382 \hangindent=0.5in Boo for my project?}
-                                             [online], available: http://ans...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Overfull \hbox (0.27892pt too wide) in paragraph at lines 381--384
+Overfull \hbox (0.27892pt too wide) in paragraph at lines 438--441
 \OT1/cmr/m/n/12 28/how-should-i-decide-if-i-should-use-c-javascript-u.html [ac-
 cessed 30 De-cem-
  []
 
-[12]
-Overfull \hbox (1.70805pt too wide) in paragraph at lines 385--389
+
+Overfull \hbox (1.70805pt too wide) in paragraph at lines 442--446
 []\OT1/cmr/m/n/12 Unity (2015) \OT1/cmr/m/it/12 Will Boo ever come back? \OT1/c
 mr/m/n/12 [on-line], avail-able: https://forum.unity3d.com
  []
 
-! Misplaced alignment tab character &.
-l.390 ...th-Fortnite-developers-Thursday-April-17&
-                                                  p=19464&viewfull=1#post194...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
-l.390 ...ite-developers-Thursday-April-17&p=19464&
-                                                  viewfull=1#post19464 [acce...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.390 ...ers-Thursday-April-17&p=19464&viewfull=1#
-                                                  post19464 [accessed 05 Apr...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Overfull \hbox (17.21623pt too wide) in paragraph at lines 390--391
+Overfull \hbox (17.21623pt too wide) in paragraph at lines 447--448
 \OT1/cmr/m/n/12 able: https://forums.unrealengine.com/showthread.php?3035-New-T
 witch--with-
  []
 
 
-Overfull \hbox (55.63849pt too wide) in paragraph at lines 392--393
+Overfull \hbox (4.72235pt too wide) in paragraph at lines 449--451
 []\OT1/cmr/m/n/12 Unreal (2017) \OT1/cmr/m/it/12 What is Un-real En-gine 4 \OT1
-/cmr/m/n/12 [on-line], avail-able: https://www.unrealengine.com/what-
+/cmr/m/n/12 [on-line], avail-able: https://www.unrealengine.c
  []
 
-[13] [14] (report.aux) ) 
+[20] [21] (report.aux) ) 
 Here is how much of TeX's memory you used:
  2008 strings out of 493333
  29907 string characters out of 3130577
@@ -766,20 +512,18 @@ Here is how much of TeX's memory you used:
  5525 multiletter control sequences out of 15000+200000
  8410 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,25p,688b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,25p,752b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rian/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rian/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users
-/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
-b><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmti12.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (20 pages, 162757 bytes).
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rian/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Rian/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
+fb><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmtt12.pfb>
+Output written on report.pdf (27 pages, 160519 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
