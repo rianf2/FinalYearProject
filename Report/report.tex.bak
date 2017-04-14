@@ -614,8 +614,6 @@ usersDB.users.insert(req.body, function(err, doc){
 });
 \end{lstlisting}
 
-In order for the user to log in from the game, another get request is used. This time the path is altered. It now uses route parameters to find a user which matches the user name given. 
-
 {\centering {\subsection{Webpage implementation}}}
 
 {\centering {\subsection{Database implementation}}}
