@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.13)  14 APR 2017 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.16)  17 APR 2017 15:51
 entering extended mode
 **./report.tex
 (report.tex
-LaTeX2e <2017/01/01> patch level 1
+LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,31 +21,38 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
+ty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
+ty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
+cs.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
+.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
+r.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
+sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -53,17 +60,21 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
+ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
+y"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.s
+ty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
+ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -79,8 +90,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
+fg"))
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.s
+ty"
 \lst@mode=\count91
 \lst@gtempboxa=\box26
 \lst@token=\toks16
@@ -94,21 +107,24 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \lst@lineno=\count96
 \lst@maxwidth=\dimen116
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.st
+y"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count97
 \lst@skipnumbers=\count98
 \lst@framebox=\box27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.c
+fg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
+cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
@@ -128,7 +144,8 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
+i"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count99
 \scratchdimen=\dimen117
@@ -141,11 +158,14 @@ LaTeX Font Info:    ... okay on input line 17.
 \MPnumerator=\count103
 \makeMPintoPDFobject=\count104
 \everyMPtoPDFconversion=\toks18
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
+ds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex
+.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -154,22 +174,28 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
+ase.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefine
+keys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
+sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkey
+s.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds
+.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -226,321 +252,261 @@ Package pdftex.def Info: uni-limerick-crest.png used on input line 24.
 (pdftex.def)             Requested size: 174.65207pt x 202.757pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./uni-limerick-crest.png 
-(PNG copy)>] [1] [2]
+{C:/Users/Rian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./uni-limeri
+ck-crest.png (PNG copy)>] [1] [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 62.
+(Font)              <12> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 62.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 62.
- [3] (report.toc [4])
+(Font)              <6> on input line 58.
+ [3]
+(report.toc [4])
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
+ [5] [1] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
-[5] [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-\OT1/cmr/m/n/12 vaders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []\OT1/cmr/m/n/12 Arcade,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \OT1/cmr/m/n/12 Atari 2600,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \OT1/cmr/m/n/12 ter-tain-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 144--144
-\OT1/cmr/m/n/12 vaders Part
+Underfull \hbox (badness 4001) in paragraph at lines 134--134
+\OT1/cmr/m/n/12 Part II, Space
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\OT1/cmr/m/n/12 II, Space
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\OT1/cmr/m/n/12 In-vaders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\OT1/cmr/m/n/12 Deluxe
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []\OT1/cmr/m/n/12 Arcade,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []\OT1/cmr/m/n/12 Gameboy ver-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \OT1/cmr/m/n/12 al-lowed mul-ti-player,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \OT1/cmr/m/n/12 USA ver-sion had
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+\OT1/cmr/m/n/12 1999, Space
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-\OT1/cmr/m/n/12 vaders X
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+\OT1/cmr/m/n/12 In-vaders X
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\OT1/cmr/m/n/12 Playstation,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \OT1/cmr/m/n/12 64, Game
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-\OT1/cmr/m/n/12 vaders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/12 Evo-lu-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 2846) in paragraph at lines 140--140
+\OT1/cmr/m/n/12 Space In-vaders:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
-\OT1/cmr/m/n/12 vaders:
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+\OT1/cmr/m/n/12 Galaxy Beat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/12 Playstation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/12 Updated graph-ics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/12 sounds and game-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/12 play, mul-ti-player
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
-[]\OT1/cmr/m/n/12 Space In-
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
-\OT1/cmr/m/n/12 vaders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
 \OT1/cmr/m/n/12 Playsta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
 \OT1/cmr/m/n/12 Portable,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-[]\OT1/cmr/m/n/12 Space In-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-\OT1/cmr/m/n/12 vaders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
-\OT1/cmr/m/n/12 In-fin-ity
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/12 Space In-vaders
  []
 
 [3] [4] [5] <json_no_id.PNG, id=41, 201.75375pt x 76.03406pt>
 File: json_no_id.PNG Graphic file (type png)
 
 <use json_no_id.PNG>
-Package pdftex.def Info: json_no_id.PNG used on input line 187.
+Package pdftex.def Info: json_no_id.PNG used on input line 177.
 (pdftex.def)             Requested size: 201.75325pt x 76.03386pt.
  [6 <./json_no_id.PNG>]
 <json_id.PNG, id=47, 250.68657pt x 86.57344pt>
 File: json_id.PNG Graphic file (type png)
  <use json_id.PNG>
-Package pdftex.def Info: json_id.PNG used on input line 217.
+Package pdftex.def Info: json_id.PNG used on input line 211.
 (pdftex.def)             Requested size: 250.68594pt x 86.57321pt.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+ [7 <./json_id.PNG>]
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
+ty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [7 <./json_id.PNG>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
- [8] [9] [10] [11] [12] [13] [14]
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+) [8] [9] [10] [11] [12] [13] [14] [15]
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
+ty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [15] [16]
-[17] [18] [19] [20] [21] [22] [23] [24]
-Overfull \hbox (3.94841pt too wide) in paragraph at lines 646--648
-[]\OT1/cmr/m/n/12 Apple (2017) \OT1/cmr/m/it/12 iOS Hu-man In-ter-face Guide-li
-nes \OT1/cmr/m/n/12 [on-line], avail-able: https://developer.ap
+) [16] [17] [18] [19] [20] [21] [22] [23]
+Overfull \hbox (17.53157pt too wide) in paragraph at lines 661--662
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-
-Overfull \hbox (10.88435pt too wide) in paragraph at lines 646--648
-\OT1/cmr/m/n/12 ple.com/ios/human-interface-guidelines/visual-design/layout/ [a
-c-cessed 11 April
- []
-
-
-Overfull \hbox (1.52383pt too wide) in paragraph at lines 649--653
-[]\OT1/cmr/m/n/12 Bandai Namco \OT1/cmr/m/it/12 Space In-vaders Evo-lu-tion \OT
-1/cmr/m/n/12 [on-line], avail-able: https://www.bandainamc
- []
-
-
-Overfull \hbox (8.4pt too wide) in paragraph at lines 654--655
-[]\OT1/cmr/m/n/12 Bootstrap \OT1/cmr/m/it/12 Overview \OT1/cmr/m/n/12 [on-line]
-, avail-able: http://getbootstrap.com/css/ [ac-cessed 11April
- []
-
-
-Overfull \hbox (0.83585pt too wide) in paragraph at lines 659--662
+[24] [25]
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
+ty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.st
+y"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) [26] [27] [28]
+("C:\Users\Rian\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
+ty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [29] [30] [31]
+Overfull \hbox (0.83585pt too wide) in paragraph at lines 939--942
 \OT1/cmr/m/n/12 org/web/20080408152913/http://archive.gamespy.com/legacy/hallof
 fame/spa
  []
 
-
-Overfull \hbox (8.46124pt too wide) in paragraph at lines 663--665
-[]\OT1/cmr/m/n/12 IGN (2008) \OT1/cmr/m/it/12 Space In-vaders Ex-treme \OT1/cmr
-/m/n/12 [on-line], avail-able: http://ie.ign.com/games/space-
- []
-
-
-Overfull \hbox (2.17662pt too wide) in paragraph at lines 682--685
-[]\OT1/cmr/m/n/12 Stack Over-flow (2017) \OT1/cmr/m/it/12 Mon-goDB \OT1/cmr/m/n
-/12 [on-line], avail-able: http://stackoverflow.com/questio
- []
-
-[25]
-Overfull \hbox (3.93239pt too wide) in paragraph at lines 686--687
-\OT1/cmr/m/n/12 [on-line], avail-able: http://stackoverflow.com/questions/71498
-90/what-does-mongodb-
- []
-
-
-Overfull \hbox (0.27892pt too wide) in paragraph at lines 703--706
+[32]
+Overfull \hbox (0.27892pt too wide) in paragraph at lines 983--986
 \OT1/cmr/m/n/12 28/how-should-i-decide-if-i-should-use-c-javascript-u.html [ac-
 cessed 30 De-cem-
  []
 
 
-Overfull \hbox (1.70805pt too wide) in paragraph at lines 707--711
+Overfull \hbox (1.70805pt too wide) in paragraph at lines 987--991
 []\OT1/cmr/m/n/12 Unity (2015) \OT1/cmr/m/it/12 Will Boo ever come back? \OT1/c
 mr/m/n/12 [on-line], avail-able: https://forum.unity3d.com
  []
 
 
-Overfull \hbox (17.21623pt too wide) in paragraph at lines 712--713
-\OT1/cmr/m/n/12 able: https://forums.unrealengine.com/showthread.php?3035-New-T
-witch--with-
+Overfull \hbox (0.91399pt too wide) in paragraph at lines 999--1001
+[]\OT1/cmr/m/n/12 W3C Rec-c-om-men-da-tion (2017) \OT1/cmr/m/it/12 17 Forms \OT
+1/cmr/m/n/12 [on-line], avail-able: https://www.w3.org/TR
  []
 
+[33] [34] [35] <test.png, id=144, 440.39531pt x 283.81032pt>
+File: test.png Graphic file (type png)
+ <use test.png>
+Package pdftex.def Info: test.png used on input line 1046.
+(pdftex.def)             Requested size: 440.39423pt x 283.80962pt.
 
-Overfull \hbox (4.72235pt too wide) in paragraph at lines 714--716
-[]\OT1/cmr/m/n/12 Unreal (2017) \OT1/cmr/m/it/12 What is Un-real En-gine 4 \OT1
-/cmr/m/n/12 [on-line], avail-able: https://www.unrealengine.c
+Overfull \hbox (6.77422pt too wide) in paragraph at lines 1046--1047
+[][] 
  []
 
-[26] [27] (report.aux) ) 
+[36 <./test.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3663 strings out of 493333
- 52096 string characters out of 3139194
- 159231 words of memory out of 3000000
- 7157 multiletter control sequences out of 15000+200000
+ 3978 strings out of 493333
+ 57340 string characters out of 3130577
+ 166460 words of memory out of 3000000
+ 7465 multiletter control sequences out of 15000+200000
  8878 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,40p,752b,1551s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (33 pages, 195148 bytes).
+ 40i,8n,49p,790b,1549s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rian/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rian/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Ria
+n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti12.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb><C:/Users/Rian/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (42 pages, 221677 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
