@@ -742,7 +742,7 @@ In this example the filter takes all the users, orders them by score in descendi
 
 The second controller that is used is the CreateAccountController. This controller gathers all the user data that is inputted, sets the score and time played to the default values (zero) and posts them to the server. When this is successfully executed the page is refreshed however if there are more than five users in the table, they new user will not be shown. 
 
-The CreateAccountController has a toggle function. This is used by the ng-click directive to show the user creation form. The {\$}scope object is what enables data to pass between the contoller and view. In the toggle function it is setting the value of createAccount to be inverted. (i.e if it is true, it will set it to false). This is used by the ng-show directive to display the form.
+The CreateAccountController has a toggle function. This is used by the ng-click directive to show the user creation form. The {\$}scope object is what enables data to pass between the contoller and view. In the toggle function it is setting the value of createAccount to be inverted. (i.e. if it is true, it will set it to false). This is used by the ng-show directive to display the form.
 
 When dealing with user input one problem that arises is form validation. Angular handles this problem by having many different directives that can assist in validating information. This is evident in form where it specifies what the mimimum length for the password and user name fields must be. For the user to be able to create an account all the data entered must meet a certain criteria (password must have a minimum length, email address must be in a valid format and no field can be empty). Normally this would be a difficult task however the ng-disabled directive takes care of this. If any of the fields are invalid, the button to submit the data can not be clicked. When everything is valid, the button can be clicked and the user will have an account. 
 
@@ -1010,7 +1010,15 @@ W3C Reccommendation (2017) \textit{17 Forms} [online], available: https://www.w3
 \newpage
 \textbf{Appendix 1:} The bugs.json file
 \begin{lstlisting}
-
+{
+	"name": "Cian",
+	"problem": "The game doesn't handle spaces in usernames.",
+	"dateReported": "29/03/2017 17:45:56"
+}{
+	"name": "Shane",
+	"problem": "I was able to shoot the invaders before they finished flying in",
+	"dateReported": "30/03/2017 13:20:15"
+}
 \end{lstlisting}
 \textbf{Appendix 2:} The package.json file
 \begin{lstlisting}
